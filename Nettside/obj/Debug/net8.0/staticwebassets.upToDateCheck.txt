@@ -112,10 +112,15 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-wwwroot\lib\leaflet\leaflet.css
-wwwroot\lib\leaflet\leaflet.js
-wwwroot\lib\leaflet\leaflet.js.map
-wwwroot\lib\leaflet\leaflet-src.esm.js
-wwwroot\lib\leaflet\leaflet-src.esm.js.map
-wwwroot\lib\leaflet\leaflet-src.js
-wwwroot\lib\leaflet\leaflet-src.js.map
+wwwroot\lib\leaflet (1)\images\layers.png
+wwwroot\lib\leaflet (1)\images\layers-2x.png
+wwwroot\lib\leaflet (1)\images\marker-icon.png
+wwwroot\lib\leaflet (1)\images\marker-icon-2x.png
+wwwroot\lib\leaflet (1)\images\marker-shadow.png
+wwwroot\lib\leaflet (1)\leaflet.css
+wwwroot\lib\leaflet (1)\leaflet.js
+wwwroot\lib\leaflet (1)\leaflet.js.map
+wwwroot\lib\leaflet (1)\leaflet-src.esm.js
+wwwroot\lib\leaflet (1)\leaflet-src.esm.js.map
+wwwroot\lib\leaflet (1)\leaflet-src.js
+wwwroot\lib\leaflet (1)\leaflet-src.js.map

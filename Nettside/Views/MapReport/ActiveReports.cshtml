@@ -1,6 +1,6 @@
-﻿@model IEnumerable<GeoChangesModel>
+﻿@model IEnumerable<AreaChangeModel>
 
-    @*
+    
 <h1>Active Reports</h1>
 
 <table class="table">
@@ -8,7 +8,7 @@
         <tr>
             <th>ID</th>
             <th>Description</th>
-            <th>GeoJson</th>
+            <th>AreaJson</th>
            
         </tr>
     </thead>
@@ -18,14 +18,13 @@
             <tr>
                 <td>@report.Id</td>
                 <td>@report.Description</td>
-                <td>@report.GeoJson</td>
+                <td>@report.AreaJson</td>
                 <td>
-                    <a href="@Url.Action("EditGeoChangeView", "Home", new { id = report.Id })">Edit</a> 
-                    <a href="@Url.Action("DeleteGeoChange", "Home", new { id = report.Id })">Delete</a>
+                    <a href="@Url.Action("EditAreaChangeView", "Home", new { id = report.Id })">Edit</a> 
+                    <a href="@Url.Action("DeleteAreaChange", "Home", new { id = report.Id })">Delete</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
-    *@
-
+   

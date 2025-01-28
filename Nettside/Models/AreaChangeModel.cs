@@ -6,7 +6,7 @@ namespace Nettside.Models
     {
         [Key]
         public string Id { get; set; }
-        // public string GeoJson { get; set; }
+         public string AreaJson { get; set; }
         public string Description { get; set; }
 
     }

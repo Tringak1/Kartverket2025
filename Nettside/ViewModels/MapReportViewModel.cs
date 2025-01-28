@@ -10,10 +10,10 @@ namespace Nettside.ViewModels
     {
         public IEnumerable<AreaChangeModel?> AreaChanges { get; set; }
 
-      //  public GeoChangesModel? GeoChangesModel { get; set; }
+     
 
         public AreaChangeModel? AreaChangeModel { get; set; }
-        // public IEnumerable<GeoChangesModel?> GeoChanges { get; set; }
+        
 
     }
 }

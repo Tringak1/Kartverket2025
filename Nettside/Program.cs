@@ -17,7 +17,7 @@ new MySqlServerVersion(new Version(10, 5, 9))));
 
 // register repository-classes for dependency injection (DI)
 builder.Services.AddScoped<IAreaChangeRepository, AreaChangeRepository>();
-builder.Services.AddScoped<IGeoChangesRepository, GeoChangesRepository>();
+
 
 
 

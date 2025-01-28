@@ -15,7 +15,7 @@ namespace Nettside.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger; // Logger for tracking information and errors
-        private readonly IGeoChangesRepository _geoChangesRepository; // Repository for managing GeoChanges
+
         private readonly IAreaChangeRepository _areaChangeRepository; // Repository for managing AreaChanges
 
 
@@ -24,11 +24,11 @@ namespace Nettside.Controllers
         /// </summary>
         public HomeController(
             ILogger<HomeController> logger,
-            IGeoChangesRepository geoChangesRepository,
+
             IAreaChangeRepository areaChangeRepository)
         {
             _logger = logger;
-            _geoChangesRepository = geoChangesRepository;
+
             _areaChangeRepository = areaChangeRepository;
         }
 
@@ -51,31 +51,31 @@ namespace Nettside.Controllers
         {
             return View();
         }
-        
+
         /// <summary>
         /// Handles the submission of data for a new area change.
         /// </summary>
-        /// <param name="geoJson">GeoJSON data representing the area.</param>
+        /// <param name="areaJson"></param>
         /// <param name="description">Description of the change.</param>
         /// <returns>A redirect to the map overview or an error message.</returns>
         [Authorize(Roles = "Caseworker, PrivateUser")]
         [HttpPost]
-        public async Task<IActionResult> RegisterAreaChange(string geoJson, string description)
+        public async Task<IActionResult> RegisterAreaChange(string areaJson, string description)
         {
             try
             {
-                if (string.IsNullOrEmpty(geoJson) || string.IsNullOrEmpty(description))
+                if (string.IsNullOrEmpty(areaJson) || string.IsNullOrEmpty(description))
                 {
                     return BadRequest("Invalid data.");
                 }
 
-                var newGeoChange = new GeoChangesModel
+                var newAreaChange = new AreaChangeModel
                 {
-                    GeoJson = geoJson,
+                    AreaJson = areaJson,
                     Description = description
                 };
 
-                await _geoChangesRepository.AddAsync(newGeoChange);
+                await _areaChangeRepository.AddAsync(newAreaChange);
 
                 return RedirectToAction("Index", "MapReport");
             }
@@ -94,13 +94,13 @@ namespace Nettside.Controllers
         [HttpGet]
         public async Task<IActionResult> AreaChangeOverview()
         {
-            var geoChanges = await _geoChangesRepository.GetAllAsync();
+
             var areaChanges = await _areaChangeRepository.GetAllAsync();
 
-            var viewModel = geoChanges.Select(change => new MapReportViewModel
+            var viewModel = areaChanges.Select(change => new MapReportViewModel
             {
-                GeoChanges = new List<GeoChangesModel> { change },
-                AreaChanges = areaChanges
+                AreaChanges = new List<AreaChangeModel> { change },
+
             }).ToList();
 
             return View(viewModel);
@@ -113,91 +113,18 @@ namespace Nettside.Controllers
         /// <returns>An edit view or a 404 error if the change is not found.</returns>
         [Authorize(Roles = "Caseworker")]
         [HttpGet]
-        public async Task<IActionResult> EditGeoChangeView(int id)
+        public async Task<IActionResult> EditAreaChangeView(int id)
         {
-            var geoChange = await _geoChangesRepository.GetAsync(id);
-            if (geoChange == null)
+            var areaChange = await _areaChangeRepository.GetAsync(id);
+            if (areaChange == null)
             {
-                return NotFound($"GeoChange with ID {id} not found.");
+                return NotFound($"AreaChange with ID {id} not found.");
             }
 
-            return View(geoChange);
-        }
-
-
-        /// <summary>
-        /// Updates a GeoChange in the database.
-        /// </summary>
-        /// <param name="geoChanges">The updated GeoChange model</param>
-        /// <returns>A redirect to the overview page or an error message.</returns>
-        [Authorize(Roles = "Caseworker")]
-        [HttpPost]
-        /* public async Task<IActionResult> EditGeoChange(GeoChangesModel geoChanges)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(geoChanges);
-            }
-
-            var result = await _geoChangesRepository.UpdateAsync(geoChanges);
-            if (result == null)
-            {
-                return NotFound($"GeoChange with ID {geoChanges.Id} not found.");
-            }
-
-            return RedirectToAction("AreaChangeOverview");
-        }
-
-        /// <summary>
-        /// Displays a confirmation page to delete a GeoChange.
-        /// </summary>
-        /// <param name="id">The ID of the GeoChange to be deleted.</param>
-        /// <returns>A delete confirmation view or a 404 error if the change is not found.</returns>
-        [Authorize(Roles = "Caseworker")]
-        [HttpGet]
-        public async Task<IActionResult> DeleteGeoChange(int id)
-        {
-            var geoChange = await _geoChangesRepository.GetAsync(id);
-            if (geoChange == null)
-            {
-                return NotFound($"GeoChange with ID {id} not found.");
-            }
-
-            return View(geoChange);
-        }
-
-        /// <summary>
-        /// Deletes a GeoChange from the database.
-        /// </summary>
-        /// <param name="id">The ID of the GeoChange to be deleted.</param>
-        /// <returns>A redirect to the overview page or an error message.</returns>
-        [Authorize(Roles = "Caseworker")]
-        [HttpPost, ActionName("DeleteGeoChange")]
-        public async Task<IActionResult> DeleteGeoChangeConfirmed(int id)
-        {
-            try
-            {
-                var result = await _geoChangesRepository.DeleteAsync(id);
-                if (result == null)
-                {
-                    return NotFound($"GeoChange with ID {id} not found.");
-                }
-
-                return RedirectToAction("AreaChangeOverview");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Error deleting GeoChange: {ex.Message}");
-                return BadRequest("An error occurred while deleting the GeoChange.");
-            }
-        }
-
-        /// <summary>
-        /// Displays the privacy policy page.
-        /// </summary>
-        public IActionResult Privacy()
-        {
-            return View();
+            return View(areaChange);
         }
     }
 }
+
+
+       

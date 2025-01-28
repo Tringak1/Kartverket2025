@@ -18,8 +18,6 @@ namespace Nettside.Data
         {
         }
 
-
-      //ublic DbSet<GeoChangesModel> GeoChange { get; set; } 
         public DbSet<AreaChangeModel> AreaChanges { get; set; }
 
         /// <summary>

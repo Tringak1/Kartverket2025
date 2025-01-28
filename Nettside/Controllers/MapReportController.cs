@@ -9,16 +9,15 @@ namespace Nettside.Controllers
     {
         private readonly ILogger<MapReportController> _logger;
         private readonly IAreaChangeRepository _areaChangeRepository;
-        private readonly IGeoChangesRepository _geoChangesRepository;
+       
 
         public MapReportController(
             ILogger<MapReportController> logger,
-            IAreaChangeRepository areaChangeRepository,
-            IGeoChangesRepository geoChangesRepository)
+            IAreaChangeRepository areaChangeRepository)
         {
             _logger = logger;
             _areaChangeRepository = areaChangeRepository;
-            _geoChangesRepository = geoChangesRepository;
+            
         }
 
         [Authorize(Roles = "Caseworker, PrivateUser")]
@@ -27,12 +26,11 @@ namespace Nettside.Controllers
             try
             {
                 var areaChanges = await _areaChangeRepository.GetAllAsync();
-                var geoChanges = await _geoChangesRepository.GetAllAsync();
-
+                
                 var viewModel = new MapReportViewModel
                 {
                     AreaChanges = areaChanges,
-                    GeoChanges = geoChanges
+                   
                 };
 
                 return View(viewModel);
