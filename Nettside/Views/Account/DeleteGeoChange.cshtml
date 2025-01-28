@@ -1,0 +1,30 @@
+﻿ @model GeoChangesModel
+
+<div class="container">
+    <h2>Delete GeoChange</h2>
+
+    @* Confirmation message for the user *@
+    <p>Are you sure you want to delete this GeoChange?</p>
+
+    @* Display details of the GeoChange being deleted *@
+    <dl class="row">
+        <dt class="col-sm-2">Description</dt>
+        <dd class="col-sm-10">@Model.Description</dd>
+
+        <dt class="col-sm-2">GeoJson</dt>
+        <dd class="col-sm-10">@Model.GeoJson</dd>
+    </dl>
+
+    @* Form for deleting the GeoChange *@
+    <form asp-action="DeleteGeoChange" method="post">
+
+        @* Hidden field to pass the GeoChange ID to the server *@
+        <input type="hidden" asp-for="Id" />
+
+        @* Submit button for confirming deletion *@
+        <button type="submit" class="btn btn-danger">Delete</button>
+
+        @*Cancel button to navigate back to the overview page *@
+        <a asp-action="AreaChangeOverview" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

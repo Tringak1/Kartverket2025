@@ -1,0 +1,31 @@
+﻿@model IEnumerable<GeoChangesModel>
+
+    @*
+<h1>Active Reports</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>GeoJson</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var report in Model)
+        {
+            <tr>
+                <td>@report.Id</td>
+                <td>@report.Description</td>
+                <td>@report.GeoJson</td>
+                <td>
+                    <a href="@Url.Action("EditGeoChangeView", "Home", new { id = report.Id })">Edit</a> 
+                    <a href="@Url.Action("DeleteGeoChange", "Home", new { id = report.Id })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+    *@
+

@@ -1,0 +1,61 @@
+﻿@using Nettside.ViewModels
+@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+@* Main container for the login form*@
+<div class="account-container">
+    <div class="account-box">
+        @* Header for the login form *@
+        <h2 class="text-center mb-4">Login</h2>
+
+        @* Form for user-login submission *@
+        <form method="post">
+            @Html.AntiForgeryToken() @* Adds a CSRF token for security *@
+            <div class="text-danger"></div>
+
+        @* UserName input field *@
+            <div class="mb-3">
+                <label asp-for="UserName" class="form-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+        @* Password input field *@
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            @* Forgor password link *@
+            <div class="float-end">
+                <a asp-controller="Account" asp-action="VerifyPassword" class="text-decoration-none" style="color: rgba(21, 102, 48, 1)">
+                    Forgot password?
+                </a>
+            </div>
+            
+            @* Login button *@
+            <button type="submit" value="Login" class="btn"> Login</button>
+
+            @* Link to registration page *@
+            <p class="text-center mt-2">
+                Don't have an account? <a asp-controller="Account" asp-action="Register" class="text-decoration-underline" style="color: rgba(21, 102, 48, 1)">Register here</a>
+            </p>
+
+            @* Back to home page link *@
+            <div class="text-center">
+                <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3" style="color: rgba(21, 102, 48, 1)">Back</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@* Script section for validation *@
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+    }
+}

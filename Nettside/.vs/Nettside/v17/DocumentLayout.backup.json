@@ -1,0 +1,864 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\mapreport\\activereports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\mapreport\\activereports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\mapreport\\mapreportviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\mapreport\\mapreportviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\home\\areachangeoverview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\home\\areachangeoverview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\home\\registerareachange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\home\\registerareachange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\account\\verifyemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\account\\verifyemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\account\\registercaseworker.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\account\\registercaseworker.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\account\\profilepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\account\\profilepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\account\\employeeormapuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\account\\employeeormapuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\account\\editgeochange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\account\\editgeochange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\account\\deletegeochange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\account\\deletegeochange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\viewmodels\\verifyemailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:viewmodels\\verifyemailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\viewmodels\\profilepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:viewmodels\\profilepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\viewmodels\\mapreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:viewmodels\\mapreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\repositories\\igeochangerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:repositories\\igeochangerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\repositories\\geochangerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:repositories\\geochangerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\repositories\\areachangerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:repositories\\areachangerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\models\\areachangemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:models\\areachangemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\models\\geochangesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:models\\geochangesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\models\\positionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:models\\positionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\controllers\\mapreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:controllers\\mapreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\repositories\\iareachangerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:repositories\\iareachangerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\viewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:viewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\nettside.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:nettside.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\wwwroot\\css\\areachangeoverview.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:wwwroot\\css\\areachangeoverview.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\wwwroot\\css\\account.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:wwwroot\\css\\account.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\wwwroot\\css\\verticalbtn.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:wwwroot\\css\\verticalbtn.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\wwwroot\\js\\verticalbtn.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:wwwroot\\js\\verticalbtn.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tring\\AppData\\Local\\SourceServer\\ec1f243ee26a4cc13f4400c360eacaf35e6b975bc72ef237b499332e6a53c4bc\\Nettside\\LoginAndRegistrationViewModels\\LoginViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Migrations\\20241120130549_firstTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Migrations\\20241120124850_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\migrations\\20241122122634_demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:migrations\\20241122122634_demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\202\\kartverket\\nettside\\migrations\\20241122141840_initialtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:migrations\\20241122141840_initialtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\MapReportViewModel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Account\\MapReportViewModel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AreaChangeOverview.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Home\\AreaChangeOverview.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\AreaChangeOverview.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Home\\AreaChangeOverview.cshtml",
+              "RelativeToolTip": "Views\\Home\\AreaChangeOverview.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T10:02:08.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActiveReports.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\MapReport\\ActiveReports.cshtml",
+              "RelativeDocumentMoniker": "Views\\MapReport\\ActiveReports.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\MapReport\\ActiveReports.cshtml",
+              "RelativeToolTip": "Views\\MapReport\\ActiveReports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T08:04:05.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MapReportViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\MapReport\\MapReportViewModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\MapReport\\MapReportViewModel.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\MapReport\\MapReportViewModel.cshtml",
+              "RelativeToolTip": "Views\\MapReport\\MapReportViewModel.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T08:09:13.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T01:03:07.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T12:30:02.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:11:52.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterAreaChange.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Home\\RegisterAreaChange.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\RegisterAreaChange.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Home\\RegisterAreaChange.cshtml",
+              "RelativeToolTip": "Views\\Home\\RegisterAreaChange.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAH8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T12:33:43.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T00:51:13.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VerifyEmail.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\VerifyEmail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\VerifyEmail.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\VerifyEmail.cshtml",
+              "RelativeToolTip": "Views\\Account\\VerifyEmail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T16:39:44.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterCaseworker.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\RegisterCaseworker.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\RegisterCaseworker.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\RegisterCaseworker.cshtml",
+              "RelativeToolTip": "Views\\Account\\RegisterCaseworker.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:10:40.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAwDoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T13:49:52.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProfilePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\ProfilePage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ProfilePage.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\ProfilePage.cshtml",
+              "RelativeToolTip": "Views\\Account\\ProfilePage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T16:34:11.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T10:08:13.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmployeeOrMapUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\EmployeeOrMapUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\EmployeeOrMapUser.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\EmployeeOrMapUser.cshtml",
+              "RelativeToolTip": "Views\\Account\\EmployeeOrMapUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T17:06:12.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditGeoChange.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\EditGeoChange.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\EditGeoChange.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\EditGeoChange.cshtml",
+              "RelativeToolTip": "Views\\Account\\EditGeoChange.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T16:54:40.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DeleteGeoChange.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\DeleteGeoChange.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\DeleteGeoChange.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\DeleteGeoChange.cshtml",
+              "RelativeToolTip": "Views\\Account\\DeleteGeoChange.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T16:58:07.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ChangePassword.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeToolTip": "Views\\Account\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T16:32:06.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T10:03:44.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "VerifyEmailViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\ViewModels\\VerifyEmailViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\VerifyEmailViewModel.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\ViewModels\\VerifyEmailViewModel.cs",
+              "RelativeToolTip": "ViewModels\\VerifyEmailViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T16:43:05.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProfilePageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\ViewModels\\ProfilePageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ProfilePageViewModel.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\ViewModels\\ProfilePageViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ProfilePageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T16:38:55.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MapReportViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\ViewModels\\MapReportViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MapReportViewModel.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\ViewModels\\MapReportViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MapReportViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T13:38:54.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IGeoChangeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Repositories\\IGeoChangeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IGeoChangeRepository.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Repositories\\IGeoChangeRepository.cs",
+              "RelativeToolTip": "Repositories\\IGeoChangeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T13:35:54.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GeoChangeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Repositories\\GeoChangeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\GeoChangeRepository.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Repositories\\GeoChangeRepository.cs",
+              "RelativeToolTip": "Repositories\\GeoChangeRepository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T13:36:33.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AreaChangeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Repositories\\AreaChangeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\AreaChangeRepository.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Repositories\\AreaChangeRepository.cs",
+              "RelativeToolTip": "Repositories\\AreaChangeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T13:37:07.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Models\\Users.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Models\\Users.cs",
+              "RelativeToolTip": "Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T11:44:03.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AreaChangeModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Models\\AreaChangeModel.cs",
+              "RelativeDocumentMoniker": "Models\\AreaChangeModel.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Models\\AreaChangeModel.cs",
+              "RelativeToolTip": "Models\\AreaChangeModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:18:23.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:18:26.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GeoChangesModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Models\\GeoChangesModel.cs",
+              "RelativeDocumentMoniker": "Models\\GeoChangesModel.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Models\\GeoChangesModel.cs",
+              "RelativeToolTip": "Models\\GeoChangesModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T12:53:55.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T15:34:15.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PositionModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Models\\PositionModel.cs",
+              "RelativeDocumentMoniker": "Models\\PositionModel.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Models\\PositionModel.cs",
+              "RelativeToolTip": "Models\\PositionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T11:47:53.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAF8BAAAAAAAAAAAuwFQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:30:36.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MapReportController.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Controllers\\MapReportController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MapReportController.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Controllers\\MapReportController.cs",
+              "RelativeToolTip": "Controllers\\MapReportController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T13:37:36.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-20T11:41:33.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IAreaChangeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Repositories\\IAreaChangeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IAreaChangeRepository.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Repositories\\IAreaChangeRepository.cs",
+              "RelativeToolTip": "Repositories\\IAreaChangeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T13:34:49.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ChangePasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\ViewModels\\ChangePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ChangePasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\ViewModels\\ChangePasswordViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ChangePasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T16:58:32.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T16:26:25.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T20:59:15.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAHoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T08:59:07.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Nettside.csproj",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Nettside.csproj",
+              "RelativeDocumentMoniker": "Nettside.csproj",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Nettside.csproj",
+              "RelativeToolTip": "Nettside.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-01T08:09:14.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "MapReportViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\MapReportViewModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\MapReportViewModel.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Views\\Account\\MapReportViewModel.cshtml",
+              "RelativeToolTip": "Views\\Account\\MapReportViewModel.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwCgAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T15:28:40.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "account.css",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\wwwroot\\css\\account.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\account.css",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\wwwroot\\css\\account.css",
+              "RelativeToolTip": "wwwroot\\css\\account.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-24T17:04:16.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AreaChangeOverview.css",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\wwwroot\\css\\AreaChangeOverview.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\AreaChangeOverview.css",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\wwwroot\\css\\AreaChangeOverview.css",
+              "RelativeToolTip": "wwwroot\\css\\AreaChangeOverview.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-25T12:30:39.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "home.css",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\wwwroot\\css\\home.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\home.css",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\wwwroot\\css\\home.css",
+              "RelativeToolTip": "wwwroot\\css\\home.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-15T01:00:59.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-25T12:27:18.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "verticalBtn.css",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\wwwroot\\css\\verticalBtn.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\verticalBtn.css",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\wwwroot\\css\\verticalBtn.css",
+              "RelativeToolTip": "wwwroot\\css\\verticalBtn.css",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwBwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-25T12:44:50.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "verticalBtn.js",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\wwwroot\\js\\verticalBtn.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\verticalBtn.js",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\wwwroot\\js\\verticalBtn.js",
+              "RelativeToolTip": "wwwroot\\js\\verticalBtn.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-25T12:43:23.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\AppData\\Local\\SourceServer\\ec1f243ee26a4cc13f4400c360eacaf35e6b975bc72ef237b499332e6a53c4bc\\Nettside\\LoginAndRegistrationViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\ec1f243ee26a4cc13f4400c360eacaf35e6b975bc72ef237b499332e6a53c4bc\\Nettside\\LoginAndRegistrationViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\tring\\AppData\\Local\\SourceServer\\ec1f243ee26a4cc13f4400c360eacaf35e6b975bc72ef237b499332e6a53c4bc\\Nettside\\LoginAndRegistrationViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\ec1f243ee26a4cc13f4400c360eacaf35e6b975bc72ef237b499332e6a53c4bc\\Nettside\\LoginAndRegistrationViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T15:27:07.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20241122122634_demo.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Migrations\\20241122122634_demo.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241122122634_demo.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Migrations\\20241122122634_demo.cs",
+              "RelativeToolTip": "Migrations\\20241122122634_demo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T12:26:34.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "20241122141840_InitialTest.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Migrations\\20241122141840_InitialTest.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241122141840_InitialTest.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Migrations\\20241122141840_InitialTest.cs",
+              "RelativeToolTip": "Migrations\\20241122141840_InitialTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T14:18:41.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20241120130549_firstTest.cs",
+              "DocumentMoniker": "C:\\Users\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Migrations\\20241120130549_firstTest.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Migrations\\20241120130549_firstTest.cs",
+              "ToolTip": "C:\\Users\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Migrations\\20241120130549_firstTest.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Migrations\\20241120130549_firstTest.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:05:49.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-20T12:20:21.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "20241120124850_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Migrations\\20241120124850_InitialMigration.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Migrations\\20241120124850_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Migrations\\20241120124850_InitialMigration.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Migrations\\20241120124850_InitialMigration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T12:48:50.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "gitignore.txt",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\gitignore.txt",
+              "RelativeDocumentMoniker": "gitignore.txt",
+              "ToolTip": "C:\\Users\\tring\\Documents\\202\\Kartverket\\Nettside\\gitignore.txt",
+              "RelativeToolTip": "gitignore.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-20T08:59:07.026Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

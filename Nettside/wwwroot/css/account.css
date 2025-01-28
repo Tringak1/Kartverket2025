@@ -1,0 +1,70 @@
+﻿.account-container {
+    background-color: rgba(208, 236, 214, 1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Flex container for text */
+.account-box {
+    background-color: rgba(235, 190, 118, 1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    opacity: .9;
+}
+
+/ Login and register btn*/
+.btn-success {
+    background-color: rgba(21, 102, 48, 1);
+    border-color: rgba(21, 102, 48, 1);
+    border-radius: 6px;
+}
+
+
+.option-site {
+    background-image: linear-gradient(to top,rgba(208, 236, 214, 1) 65%, white 35%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.site-title {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 120px;
+    margin-top: -20px;
+}
+
+.site-box {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    gap: 100px;
+}
+
+
+.role-button {
+    background-color: rgba(252, 235, 205, 1);
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    border: 1px solid darkgrey;
+    border-bottom: 4px solid grey;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: -100px;
+    
+}

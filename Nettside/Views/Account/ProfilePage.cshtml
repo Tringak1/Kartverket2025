@@ -1,0 +1,25 @@
+﻿ @model Nettside.ViewModels.ProfilePageViewModel
+
+
+<div class="center-background"> </div>
+    <div class="profile-wrapper"> </div>
+        <h1>Profile</h1>
+
+
+        @* First name display section *@
+        <div class="input-box">
+            <label for="FirstName">FirstName</label>
+            <input type="text" asp-for="FirstName" readonly>
+        </div>
+
+        @* Last name display section *@
+        <div class="input-box">
+            <label for="LastName">LastName:</label>
+            <input type="text" asp-for="LastName" readonly>
+        </div>
+
+        @* Email display section *@
+        <div class="input-box">
+            <label for="Email">Email:</label>
+            <input type="email" asp-for="Email" readonly>
+        </div>

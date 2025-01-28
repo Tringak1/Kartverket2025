@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Ingen tilgang";
+}
+
+<div class="container my-5">
+    @* Alert box to show access denial message*@
+    <div class="alert alert-danger" role="alert">
+        <h2>Du har ikke tilgang til denne siden</h2>
+    </div>
+
+    @* Back to homepage button *@
+    <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Tilbake til forsiden</a>
+</div>
+
+

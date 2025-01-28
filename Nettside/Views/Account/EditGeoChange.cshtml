@@ -1,0 +1,27 @@
+﻿@model GeoChangesModel
+
+<div class="container">
+    <h2>Edit GeoChange</h2>
+
+    @* Form to edit an existing GeoChange *@
+    <form asp-action="EditGeoChange" method="post">
+
+        @* Hidden input to pass the GeoChange ID to the server *@
+        <input type="hidden" asp-for="Id" />
+
+
+        @* Field to edit the Description of the GeoChange *@
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <input class="form-control" asp-for="Description" />
+        </div>
+
+        @* Field to edit the GeoJson data of the GeoChange *@
+        <div class="form-group">
+            <label asp-for="GeoJson"></label>
+            <input class="form-control" asp-for="GeoJson" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>

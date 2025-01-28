@@ -1,0 +1,50 @@
+﻿@using Nettside.ViewModels
+@model List<MapReportViewModel>
+@{
+    ViewData["Title"] = "Overview";  // Setter tittelen på siden til "Overview".
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/AreaChangeOverview.css" asp-append-version="true" />
+</head>
+
+
+<body class="table-container">
+   
+    <div class="top-section">
+        <h1 class="title">Alle saker</h1>
+        <p class="fullDescription">
+            Her er en oversikt over alle saker.
+        </p>
+    </div>
+
+
+    <div class="table-box">
+        <h2 class="table-title">Alle saker</h2>  
+
+
+        
+        <table class="table">
+     
+        <thead>
+       
+        <tr class="table-header">
+        <th>RapportID</th>
+        <th>Endringer</th>
+        <th>Beskrivelse</th>
+        </tr>
+        </thead>
+        <tbody class="table-body">
+ 
+        @foreach (var change in Model)
+        {
+            <tr>
+                <td>@change.AreaChangeModel.Id</td>
+               @*@<td>@change.AreaChangeModel.GeoJson</td>*@
+                <td>@change.AreaChangeModel.Description</td>
+            </tr>
+        }
+        </tbody>
+        </table>
+    </div>
+</body>
