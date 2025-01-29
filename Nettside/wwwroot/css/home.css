@@ -54,12 +54,17 @@
 
 /* SVG image styling */
 .picture img {
-        object-fit: contain; /* Ensure SVG is scaled properly */
+    object-fit: contain; /* Ensure SVG is scaled properly */
+    border-radius: 8px;
+    height: 550px;
+    margin-right: -80px; /* Moves the picture more to the right side */
+    margin-bottom: 80px; /* Ensure space on the bottom of the picture */
 }
 
 
 .button-container {
     flex: 0 0 auto; /* Keeps the button size fixed */
+    margin-top: -300px;
 }
 
 /* Register change button in home page */
@@ -75,6 +80,7 @@
     border-radius: 8px; /* Rounds the corner of the btn */
     margin-top: -300px; /* Decides where on the page the button will be placed */
     margin-left: -10px;
+    border-color: rgba(252, 235, 205, 1);
 }
 
 /* Register change button in home page */
