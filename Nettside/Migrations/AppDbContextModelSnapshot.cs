@@ -52,20 +52,13 @@ namespace Nettside.Migrations
                         {
                             Id = "1",
                             ConcurrencyStamp = "1",
-                            Name = "System Administrator",
-                            NormalizedName = "SYSADMIN"
-                        },
-                        new
-                        {
-                            Id = "2",
-                            ConcurrencyStamp = "2",
                             Name = "Caseworker",
                             NormalizedName = "CASEWORKER"
                         },
                         new
                         {
-                            Id = "3",
-                            ConcurrencyStamp = "3",
+                            Id = "2",
+                            ConcurrencyStamp = "2",
                             Name = "PrivateUser",
                             NormalizedName = "PRIVATEUSER"
                         });
@@ -165,23 +158,8 @@ namespace Nettside.Migrations
                         },
                         new
                         {
-                            UserId = "1",
-                            RoleId = "2"
-                        },
-                        new
-                        {
-                            UserId = "1",
-                            RoleId = "3"
-                        },
-                        new
-                        {
                             UserId = "2",
                             RoleId = "2"
-                        },
-                        new
-                        {
-                            UserId = "3",
-                            RoleId = "3"
                         });
                 });
 
@@ -204,25 +182,7 @@ namespace Nettside.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Nettside.Models.AreaChange", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("GeoJson")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("AreaChanges");
-                });
-
-            modelBuilder.Entity("Nettside.Models.GeoChanges", b =>
+            modelBuilder.Entity("Nettside.Models.AreaChangeModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -230,15 +190,25 @@ namespace Nettside.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("AreaJson")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Description")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("GeoJson")
+                    b.Property<string>("Fylkenavn")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kommunenavn")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
-                    b.ToTable("GeoChange");
+                    b.ToTable("AreaChanges");
                 });
 
             modelBuilder.Entity("Nettside.Models.Users", b =>
@@ -317,53 +287,35 @@ namespace Nettside.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ac426282-4f1f-44bf-bd51-9df3b6874b3a",
-                            Email = "sysadmin@kartverket.no",
-                            EmailConfirmed = false,
-                            FirstName = "System",
-                            LastName = "Administrator",
-                            LockoutEnabled = false,
-                            NormalizedEmail = "SYSADMIN@KARTVERKET.NO",
-                            NormalizedUserName = "SYSADMIN@KARTVERKET.NO",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBPMhkgzayA96zAd/KDiwW2rMFcUBoRnNdufw+UsrcXsxgT0pR7UyS6RB8Eq8ZbfeA==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "34c16870-9e10-400a-bc61-cfcc8fea414b",
-                            TwoFactorEnabled = false,
-                            UserName = "sysadmin@kartverket.no"
-                        },
-                        new
-                        {
-                            Id = "2",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "57998c9f-2c79-4eff-888c-7f25e6776d98",
-                            Email = "caseWorker@test.com",
+                            ConcurrencyStamp = "8f9ca9dc-508f-4ff8-99f7-930a7d578d70",
+                            Email = "caseworker@test.com",
                             EmailConfirmed = false,
                             FirstName = "Test",
                             LastName = "Caseworker",
                             LockoutEnabled = false,
                             NormalizedEmail = "CASEWORKER@TEST.COM",
                             NormalizedUserName = "CASEWORKER@TEST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEUC+n84Xh+gdgv2AnB8h1brS1/06uejzNVoA24+O+d/Jx36B4kQnk+m7repe65xMA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEC+LiDIRv0iqYihLjt6XLDWJuEd82BRwPoc0QusUkAZAA5QQMcqB3JtBQ+CMJyd1VQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "a4148575-9f91-46f0-8190-bb3e6c15487d",
+                            SecurityStamp = "0cbf93bf-1e92-4d50-b767-cf0200b4850a",
                             TwoFactorEnabled = false,
                             UserName = "caseworker@test.com"
                         },
                         new
                         {
-                            Id = "3",
+                            Id = "2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "da4035f9-7eee-4289-bfd0-5a3021949cde",
-                            Email = "privateUser@test.com",
+                            ConcurrencyStamp = "c9c2620c-5cf7-4998-9b09-2805df275b64",
+                            Email = "privateuser@test.com",
                             EmailConfirmed = false,
                             FirstName = "Test",
-                            LastName = "privateUser",
+                            LastName = "PrivateUser",
                             LockoutEnabled = false,
                             NormalizedEmail = "PRIVATEUSER@TEST.COM",
                             NormalizedUserName = "PRIVATEUSER@TEST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPU1ZYjiKrCAE4XlVW89R6UWZTsUQqxAsf7pydMHrzNCnvrmqjGK+zwVevJsNfKINQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMAUPNf5Q7mnJKBbvLM68C1XjtJ+fouND5qeaKBC1K+dNcZjoKHT0naFHZI22dO5jQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2b473978-5f0a-48cd-83c1-67a70b86ac4d",
+                            SecurityStamp = "e61c4696-50b7-412b-8df2-4c11c7123b50",
                             TwoFactorEnabled = false,
                             UserName = "privateUser@test.com"
                         });
