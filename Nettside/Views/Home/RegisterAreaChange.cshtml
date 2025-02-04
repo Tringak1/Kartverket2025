@@ -1,4 +1,5 @@
-﻿
+﻿@model Nettside.Models.ViewModel.AreaChangesViewModel
+
 @{
     ViewData["Title"] = "Register Change";
 }
@@ -15,13 +16,10 @@
     <!-- Form section -->
     <div style="flex: 1; background-color: #d0a15a; padding: 20px; display: flex; flex-direction: column; gap: 20px; height: 100%;">
         <h2 style="color: white;">Legg til en endring i kartet</h2>
-        <form asp-action="RegisterAreaChange" method="post" style="display: flex; flex-direction: column; gap: 15px;">
-            <!-- User's RapportID -->
-            <label for="rapportID" style="color: white;">RapportID</label>
-            <input type="text" id="rapportID" name="RapportID" class="form-control" placeholder="Brukerens RapportID" readonly />
+        <form asp-action="RegisterAreaChange" method="post" style="display: flex; flex-direction: column; gap: 15px;">        
 
             <!-- GeoJSON Data (hidden) -->
-            <input type="hidden" id="geoJsonInput" name="geoJson" />
+            <input type="hidden" id="geoJsonInput" asp-for="ViewAreaJson" />
 
             <!-- Latitude -->
             <label for="latitude" style="color: white;">Breddegrad</label>
@@ -33,15 +31,15 @@
 
             <!-- Description -->
             <label for="description" style="color: white;">Beskrivelse</label>
-            <textarea id="description" name="Description" class="form-control" placeholder="Legg til en beskrivelse om hva slags endringer det er snakk om her..."></textarea>
+            <textarea id="description" asp-for="ViewDescription" class="form-control" placeholder="Skriv her..." required></textarea>
 
             <!-- Kommunenavn -->
             <label style="color: white;">Kommunenavn</label>
-            <input type="text" id="municipalityInput" class="form-control" readonly />
+            <input type="text" asp-for="ViewKommunenavn" id="municipalityInput" class="form-control" readonly />
 
             <!-- Fylke -->
             <label style="color: white;">Fylke</label>
-            <input type="text" id="countryInput" class="form-control" readonly />
+            <input type="text" id="countryInput" asp-for="ViewFylkenavn" class="form-control" readonly />
 
             <button type="submit" class="btn btn-success" style="align-self: flex-start;">Send inn</button>
         </form>

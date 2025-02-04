@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Authorization;
 using Nettside.Repositiories;
 using Nettside.ViewModels;
 using Nettside.Models;
+using Nettside.Models.ViewModel;
+using Microsoft.AspNetCore.Identity;
 
 namespace Nettside.Controllers
 {
@@ -18,6 +20,8 @@ namespace Nettside.Controllers
 
         private readonly IAreaChangeRepository _areaChangeRepository; // Repository for managing AreaChanges
 
+        private readonly UserManager<Users> _userManager;
+
 
         /// <summary>
         /// Constructor for injecting dependencies like the logger and repositories.
@@ -25,11 +29,13 @@ namespace Nettside.Controllers
         public HomeController(
             ILogger<HomeController> logger,
 
-            IAreaChangeRepository areaChangeRepository)
+            IAreaChangeRepository areaChangeRepository, UserManager<Users> userManager)
         {
             _logger = logger;
 
             _areaChangeRepository = areaChangeRepository;
+
+            _userManager = userManager;
         }
 
 
@@ -60,30 +66,31 @@ namespace Nettside.Controllers
         /// <returns>A redirect to the map overview or an error message.</returns>
         [Authorize(Roles = "Caseworker, PrivateUser")]
         [HttpPost]
-        public async Task<IActionResult> RegisterAreaChange(string areaJson, string description)
+        public async Task<IActionResult> RegisterAreaChange(AreaChangesViewModel areaChangesViewModel)
         {
-            try
-            {
-                if (string.IsNullOrEmpty(areaJson) || string.IsNullOrEmpty(description))
-                {
-                    return BadRequest("Invalid data.");
-                }
 
+            var currentUser = await _userManager.GetUserAsync(User);
+
+
+            if (areaChangesViewModel!= null && currentUser!=null)
+            {
                 var newAreaChange = new AreaChangeModel
                 {
-                    AreaJson = areaJson,
-                    Description = description
+                    UserName = currentUser.UserName,
+                    Kommunenavn = areaChangesViewModel.ViewKommunenavn,
+                    Fylkenavn = areaChangesViewModel.ViewFylkenavn,
+                    Description = areaChangesViewModel.ViewDescription,
+                    AreaJson = areaChangesViewModel.ViewAreaJson
                 };
 
                 await _areaChangeRepository.AddAsync(newAreaChange);
 
                 return RedirectToAction("Index", "MapReport");
+
             }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Error registering area change: {ex.Message}");
-                throw;
-            }
+
+            return BadRequest("An error occured");
+           
         }
 
         /// <summary>
