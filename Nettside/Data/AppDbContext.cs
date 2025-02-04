@@ -106,6 +106,9 @@ namespace Nettside.Data
                     UserId = privateUserId
                 }
             );
+
+            modelBuilder.Entity<AreaChangeModel>()
+                .HasKey(uniqueThis => uniqueThis.Id);
         }
     }
 }
