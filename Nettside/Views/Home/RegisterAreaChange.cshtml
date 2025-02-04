@@ -35,6 +35,14 @@
             <label for="description" style="color: white;">Beskrivelse</label>
             <textarea id="description" name="Description" class="form-control" placeholder="Legg til en beskrivelse om hva slags endringer det er snakk om her..."></textarea>
 
+            <!-- Kommunenavn -->
+            <label style="color: white;">Kommunenavn</label>
+            <input type="text" id="municipalityInput" class="form-control" readonly />
+
+            <!-- Fylke -->
+            <label style="color: white;">Fylke</label>
+            <input type="text" id="countryInput" class="form-control" readonly />
+
             <button type="submit" class="btn btn-success" style="align-self: flex-start;">Send inn</button>
         </form>
 
@@ -55,6 +63,8 @@
 
     <!-- 4. Leaflet Draw JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+    <!-- 5. Turf JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@@turf/turf@6.5.0/turf.min.js"></script>
 
     <script>
         // Initialize the map
@@ -110,6 +120,39 @@
             // Get the GeoJSON representation of the drawn layer
             var geoJsonData = layer.toGeoJSON();
             var geoJsonString = JSON.stringify(geoJsonData);
+
+            var geoCenteredData = turf.centroid(JSON.parse(geoJsonString));
+
+            var geoLon = geoCenteredData.geometry.coordinates[0];
+            var geoLat = geoCenteredData.geometry.coordinates[1];
+
+            console.log(geoCenteredData + geoLon + geoLat);
+
+            var apiUrl ='https://api.kartverket.no/kommuneinfo/v1/punkt?nord=' + geoLat + '&ost=' + geoLon + '&koordsys=4258';
+            console.log(apiUrl);
+
+            fetch(apiUrl, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json'
+                }
+
+            })   
+            .then(response => response.json())
+            .then(data => {
+
+                document.getElementById('municipalityInput').value = data.kommunenavn;
+                document.getElementById('countryInput').value = data.fylkesnavn;
+
+                console.log(data.kommunenavn);
+                console.log(data.fylkesnavn);
+
+
+                
+            }) 
+            .catch(() => console.log('error occured'));
+
+
 
             // Set the GeoJSON string into the hidden input field
             document.getElementById('geoJsonInput').value = geoJsonString;
