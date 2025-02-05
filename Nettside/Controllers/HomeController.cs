@@ -72,10 +72,11 @@ namespace Nettside.Controllers
             var currentUser = await _userManager.GetUserAsync(User);
 
 
-            if (areaChangesViewModel!= null && currentUser!=null)
+            if (areaChangesViewModel != null && currentUser != null)
             {
                 var newAreaChange = new AreaChangeModel
                 {
+                    Id = Guid.NewGuid(),
                     UserName = currentUser.UserName,
                     Kommunenavn = areaChangesViewModel.ViewKommunenavn,
                     Fylkenavn = areaChangesViewModel.ViewFylkenavn,
@@ -85,13 +86,15 @@ namespace Nettside.Controllers
 
                 await _areaChangeRepository.AddAsync(newAreaChange);
 
-                return RedirectToAction("Index", "MapReport");
+                return RedirectToAction("AreaChangeOverview", "Home");
 
             }
 
             return BadRequest("An error occured");
            
         }
+
+
 
         /// <summary>
         /// Displays an overview of registered area and geo changes.
@@ -102,16 +105,11 @@ namespace Nettside.Controllers
         public async Task<IActionResult> AreaChangeOverview()
         {
 
-            var areaChanges = await _areaChangeRepository.GetAllAsync();
+            var areaChanges = await _areaChangeRepository.GetAllAsync();    
 
-            var viewModel = areaChanges.Select(change => new MapReportViewModel
-            {
-                AreaChanges = new List<AreaChangeModel> { change },
-
-            }).ToList();
-
-            return View(viewModel);
+            return View(areaChanges);
         }
+
 
         /// <summary>
         /// Displays a page to edit a spesific geographic change.

@@ -5,7 +5,7 @@ namespace Nettside.Models
     public class AreaChangeModel
     {
         
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string UserName { get; set; }
         public string? AreaJson { get; set; }
         public string? Description { get; set; }
