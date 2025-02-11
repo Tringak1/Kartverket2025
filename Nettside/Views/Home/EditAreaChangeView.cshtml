@@ -1,0 +1,34 @@
+﻿@model Nettside.Models.AreaChangeModel
+
+@{
+    ViewData["Title"] = "Edit Area Change";
+}
+
+<h2>Edit Area Change</h2>
+
+<form asp-action="EditAreaChange" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Description">Description</label>
+        <input asp-for="Description" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AreaJson">Area JSON</label>
+        <textarea asp-for="AreaJson" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Kommunenavn">Municipality Name</label>
+        <input asp-for="Kommunenavn" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Fylkenavn">County Name</label>
+        <input asp-for="Fylkenavn" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="AreaChangeOverview" class="btn btn-secondary">Cancel</a>
+</form>

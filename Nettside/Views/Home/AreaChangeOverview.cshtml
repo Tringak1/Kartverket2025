@@ -48,6 +48,15 @@
                 <td>@change.Description</td>
                  <td>@change.Kommunenavn</td>
                  <td>@change.Fylkenavn</td>
+            
+            <td>
+                <a href="@Url.Action("EditAreaChangeView", "Home", new { id = change.Id})" class="btn btn-warning">Edit</a>
+                            <form asp-action="DeleteAreaChange" asp-controller="Home" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@change.Id" />
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+
+            </td>
             </tr>
         }
         </tbody>

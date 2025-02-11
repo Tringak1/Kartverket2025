@@ -1,0 +1,20 @@
+﻿@model Nettside.Models.AreaChangeModel
+
+@{
+    ViewData["Title"] = "Delete Area Change";
+}
+
+<h2>Are you sure you want to delete this area change?</h2>
+
+<div>
+    <p><strong>Description:</strong> @Model.Description</p>
+    <p><strong>Municipality Name:</strong> @Model.Kommunenavn</p>
+    <p><strong>County Name:</strong> @Model.Fylkenavn</p>
+</div>
+
+<form asp-action="DeleteAreaChangeConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="AreaChangeOverview" class="btn btn-secondary">Cancel</a>
+</form>

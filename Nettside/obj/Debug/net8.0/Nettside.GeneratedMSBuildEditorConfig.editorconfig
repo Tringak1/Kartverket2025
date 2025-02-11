@@ -56,6 +56,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBcmVhQ2hhbmdlT3ZlcnZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/tring/Documents/eksamenkonting202/Kartverket2025/Nettside/Views/Home/DeleteAreaChangeView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxldGVBcmVhQ2hhbmdlVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tring/Documents/eksamenkonting202/Kartverket2025/Nettside/Views/Home/EditAreaChangeView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0QXJlYUNoYW5nZVZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tring/Documents/eksamenkonting202/Kartverket2025/Nettside/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,14 +74,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/tring/Documents/eksamenkonting202/Kartverket2025/Nettside/Views/Home/RegisterAreaChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RlckFyZWFDaGFuZ2UuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/tring/Documents/eksamenkonting202/Kartverket2025/Nettside/Views/MapReport/ActiveReports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwUmVwb3J0XEFjdGl2ZVJlcG9ydHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/tring/Documents/eksamenkonting202/Kartverket2025/Nettside/Views/MapReport/MapReportViewModel.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwUmVwb3J0XE1hcFJlcG9ydFZpZXdNb2RlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tring/Documents/eksamenkonting202/Kartverket2025/Nettside/Views/Shared/Error.cshtml]

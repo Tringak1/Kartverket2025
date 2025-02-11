@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Oc4o13IHqvqv3LSMXegwfHHnswCQcKBPK8sa53sK1yg=",
+  "Hash": "lriJ5KTyirszt05uvyR+Ixkt0DOQcw0YXfZb9rxLOOE=",
   "Source": "Nettside",
   "BasePath": "_content/Nettside",
   "Mode": "Default",
@@ -1039,8 +1039,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sh8yy5bjdl",
-      "Integrity": "gGW6otlSQdp+MJGUXo8QFZo5Lx6SEOOmYNglcvrhz6w=",
+      "Fingerprint": "148h0fk5o5",
+      "Integrity": "r6Dzj20eLvzMPiBj1D7QEU0zbYwixWqt0tKmXU/swy0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\home.css"
@@ -5495,6 +5495,51 @@
       ]
     },
     {
+      "Route": "css/home.148h0fk5o5.css",
+      "AssetFile": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\wwwroot\\css\\home.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2571"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r6Dzj20eLvzMPiBj1D7QEU0zbYwixWqt0tKmXU/swy0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:00:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "148h0fk5o5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/home.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r6Dzj20eLvzMPiBj1D7QEU0zbYwixWqt0tKmXU/swy0="
+        }
+      ]
+    },
+    {
       "Route": "css/home.css",
       "AssetFile": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\wwwroot\\css\\home.css",
       "Selectors": [],
@@ -5505,7 +5550,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2315"
+          "Value": "2571"
         },
         {
           "Name": "Content-Type",
@@ -5513,11 +5558,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gGW6otlSQdp+MJGUXo8QFZo5Lx6SEOOmYNglcvrhz6w=\""
+          "Value": "\"r6Dzj20eLvzMPiBj1D7QEU0zbYwixWqt0tKmXU/swy0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 10:42:38 GMT"
+          "Value": "Tue, 04 Feb 2025 16:00:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5527,52 +5572,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-gGW6otlSQdp+MJGUXo8QFZo5Lx6SEOOmYNglcvrhz6w="
-        }
-      ]
-    },
-    {
-      "Route": "css/home.sh8yy5bjdl.css",
-      "AssetFile": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\wwwroot\\css\\home.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2315"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gGW6otlSQdp+MJGUXo8QFZo5Lx6SEOOmYNglcvrhz6w=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 10:42:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "sh8yy5bjdl"
-        },
-        {
-          "Name": "label",
-          "Value": "css/home.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-gGW6otlSQdp+MJGUXo8QFZo5Lx6SEOOmYNglcvrhz6w="
+          "Value": "sha256-r6Dzj20eLvzMPiBj1D7QEU0zbYwixWqt0tKmXU/swy0="
         }
       ]
     },
@@ -13061,7 +13061,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 10:42:38 GMT"
+          "Value": "Tue, 11 Feb 2025 22:45:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13106,7 +13106,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 10:42:38 GMT"
+          "Value": "Tue, 11 Feb 2025 22:45:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13151,7 +13151,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 10:42:38 GMT"
+          "Value": "Tue, 11 Feb 2025 22:45:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13188,7 +13188,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 10:42:38 GMT"
+          "Value": "Tue, 11 Feb 2025 22:45:14 GMT"
         },
         {
           "Name": "Cache-Control",

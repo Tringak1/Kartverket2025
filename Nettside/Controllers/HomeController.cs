@@ -118,7 +118,7 @@ namespace Nettside.Controllers
         /// <returns>An edit view or a 404 error if the change is not found.</returns>
         [Authorize(Roles = "Caseworker")]
         [HttpGet]
-        public async Task<IActionResult> EditAreaChangeView(int id)
+        public async Task<IActionResult> EditAreaChangeView(Guid id)
         {
             var areaChange = await _areaChangeRepository.GetAsync(id);
             if (areaChange == null)
@@ -127,6 +127,21 @@ namespace Nettside.Controllers
             }
 
             return View(areaChange);
+        }
+
+
+        [Authorize(Roles = "Caseworker")]
+        [HttpPost]
+        public async Task<IActionResult> DeleteAreaChange(Guid id)
+        {
+            var areaChange = await _areaChangeRepository.GetAsync(id);
+            if (areaChange == null)
+            {
+                return NotFound($"AreaChange with ID {id} not found.");
+            }
+
+            await _areaChangeRepository.DeleteAsync(id);
+            return RedirectToAction("AreaChangeOverview", "Home");
         }
     }
 }

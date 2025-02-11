@@ -1,0 +1,339 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\views\\home\\areachangeoverview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\home\\areachangeoverview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\views\\home\\deleteareachangeview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\home\\deleteareachangeview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\views\\home\\editareachangeview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\home\\editareachangeview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\repositories\\areachangerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:repositories\\areachangerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\repositories\\iareachangerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:repositories\\iareachangerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\models\\areachangemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:models\\areachangemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\viewmodels\\mapreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:viewmodels\\mapreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tring\\AppData\\Local\\SourceServer\\92ad4d0d59574d0fdb24679abdba9a1d74c5e372e9e3c67c66ebeb69170e05f5\\Nettside\\Models\\ViewModel\\AreaChangesViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\views\\home\\registerareachange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\home\\registerareachange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\migrations\\20250204122245_initialtestagain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:migrations\\20250204122245_initialtestagain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\views\\account\\employeeormapuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:views\\account\\employeeormapuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\nettside.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:nettside.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T22:44:35.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T22:44:30.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAADwv4wAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T12:26:50.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAreaChangeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Repositories\\IAreaChangeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IAreaChangeRepository.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Repositories\\IAreaChangeRepository.cs",
+              "RelativeToolTip": "Repositories\\IAreaChangeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T11:51:26.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AreaChangeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Repositories\\AreaChangeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\AreaChangeRepository.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Repositories\\AreaChangeRepository.cs",
+              "RelativeToolTip": "Repositories\\AreaChangeRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T11:51:29.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AreaChangeOverview.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\Home\\AreaChangeOverview.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\AreaChangeOverview.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\Home\\AreaChangeOverview.cshtml",
+              "RelativeToolTip": "Views\\Home\\AreaChangeOverview.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAkwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-29T12:01:48.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAFoBAAAAAAAAAAAqwG0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T12:32:10.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EditAreaChangeView.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\Home\\EditAreaChangeView.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\EditAreaChangeView.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\Home\\EditAreaChangeView.cshtml",
+              "RelativeToolTip": "Views\\Home\\EditAreaChangeView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T22:36:06.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeleteAreaChangeView.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\Home\\DeleteAreaChangeView.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\DeleteAreaChangeView.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\Home\\DeleteAreaChangeView.cshtml",
+              "RelativeToolTip": "Views\\Home\\DeleteAreaChangeView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T22:36:46.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AreaChangeModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Models\\AreaChangeModel.cs",
+              "RelativeDocumentMoniker": "Models\\AreaChangeModel.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Models\\AreaChangeModel.cs",
+              "RelativeToolTip": "Models\\AreaChangeModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T12:04:20.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MapReportViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\ViewModels\\MapReportViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MapReportViewModel.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\ViewModels\\MapReportViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MapReportViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T12:02:36.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AreaChangesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\AppData\\Local\\SourceServer\\92ad4d0d59574d0fdb24679abdba9a1d74c5e372e9e3c67c66ebeb69170e05f5\\Nettside\\Models\\ViewModel\\AreaChangesViewModel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\92ad4d0d59574d0fdb24679abdba9a1d74c5e372e9e3c67c66ebeb69170e05f5\\Nettside\\Models\\ViewModel\\AreaChangesViewModel.cs",
+              "ToolTip": "C:\\Users\\tring\\AppData\\Local\\SourceServer\\92ad4d0d59574d0fdb24679abdba9a1d74c5e372e9e3c67c66ebeb69170e05f5\\Nettside\\Models\\ViewModel\\AreaChangesViewModel.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\92ad4d0d59574d0fdb24679abdba9a1d74c5e372e9e3c67c66ebeb69170e05f5\\Nettside\\Models\\ViewModel\\AreaChangesViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:14:01.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T17:38:13.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T12:29:06.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250204122245_InitialTestAgain.cs",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Migrations\\20250204122245_InitialTestAgain.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250204122245_InitialTestAgain.cs",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Migrations\\20250204122245_InitialTestAgain.cs",
+              "RelativeToolTip": "Migrations\\20250204122245_InitialTestAgain.cs",
+              "ViewState": "AgIAACkBAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T12:22:46.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RegisterAreaChange.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\Home\\RegisterAreaChange.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\RegisterAreaChange.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\Home\\RegisterAreaChange.cshtml",
+              "RelativeToolTip": "Views\\Home\\RegisterAreaChange.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-04T12:39:23.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EmployeeOrMapUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\Account\\EmployeeOrMapUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\EmployeeOrMapUser.cshtml",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Views\\Account\\EmployeeOrMapUser.cshtml",
+              "RelativeToolTip": "Views\\Account\\EmployeeOrMapUser.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-29T12:31:44.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-04T12:19:34.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Nettside.csproj",
+              "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Nettside.csproj",
+              "RelativeDocumentMoniker": "Nettside.csproj",
+              "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Nettside.csproj",
+              "RelativeToolTip": "Nettside.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-28T13:56:09.011Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

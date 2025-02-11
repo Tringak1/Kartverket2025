@@ -17,7 +17,7 @@ namespace Nettside.Repositiories
             await appDbContext.SaveChangesAsync();
             return areaChange;
         }
-        public async Task<AreaChangeModel?> DeleteAsync(int id)
+        public async Task<AreaChangeModel?> DeleteAsync(Guid id)
         {
             var areaChangeRepository = await appDbContext.AreaChanges.FindAsync(id);
             if (areaChangeRepository == null)
@@ -32,7 +32,7 @@ namespace Nettside.Repositiories
         {
             return await appDbContext.AreaChanges.ToListAsync();
         }
-        public async Task<AreaChangeModel?> GetAsync(int id)
+        public async Task<AreaChangeModel?> GetAsync(Guid id)
         {
             return await appDbContext.AreaChanges.FindAsync(id);
         }
