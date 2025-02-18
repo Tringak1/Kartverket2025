@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Nettside.Controllers;
 using Nettside.Models;
-using Nettside.ViewModels;
+using Nettside.Models.ViewModel;
 
 
 namespace Nettside.Controllers
@@ -244,46 +244,6 @@ namespace Nettside.Controllers
         }
 
 
-
-
-
-
-
-
-
-        // displays the email verification page
-        public IActionResult VerifyEmail()
-        {
-            return View();
-        }
-
-
-
-        /// <summary>
-        /// handles email verification form submission
-        /// </summary>
-        /// <param name="model">the email verification details</param>
-        /// <returns>redirects to changepassword if the email is valid or reloads the verification page on failure.</returns>
-        [AllowAnonymous]
-        [HttpPost]
-        public async Task<IActionResult> VerifyEmail(VerifyEmailViewModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                var user = await userManager.FindByEmailAsync(model.Email);
-
-                if (user == null)
-                {
-                    ModelState.AddModelError("", "No user found with the specified email address.");
-                    return View(model);
-                }
-                else
-                {
-                    return RedirectToAction("ChangePassword", "Account", new { username = user.UserName });
-                }
-            }
-            return View(model);
-        }
 
         // Displays the change password page
 

@@ -184,11 +184,9 @@ namespace Nettside.Migrations
 
             modelBuilder.Entity("Nettside.Models.AreaChangeModel", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("char(36)");
 
                     b.Property<string>("AreaJson")
                         .HasColumnType("longtext");
@@ -287,7 +285,7 @@ namespace Nettside.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8f9ca9dc-508f-4ff8-99f7-930a7d578d70",
+                            ConcurrencyStamp = "2117e70e-e9bd-4c5c-a4aa-d382b9a4fa60",
                             Email = "caseworker@test.com",
                             EmailConfirmed = false,
                             FirstName = "Test",
@@ -295,9 +293,9 @@ namespace Nettside.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "CASEWORKER@TEST.COM",
                             NormalizedUserName = "CASEWORKER@TEST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEC+LiDIRv0iqYihLjt6XLDWJuEd82BRwPoc0QusUkAZAA5QQMcqB3JtBQ+CMJyd1VQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJd1MD5WqB4b8w0LeKzjLYzHXxQnAZWNHZopHBsaFZ3sW9ID080nldR+R2rv/75XhA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "0cbf93bf-1e92-4d50-b767-cf0200b4850a",
+                            SecurityStamp = "51be5229-ee54-44bc-a725-4597379d762a",
                             TwoFactorEnabled = false,
                             UserName = "caseworker@test.com"
                         },
@@ -305,7 +303,7 @@ namespace Nettside.Migrations
                         {
                             Id = "2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c9c2620c-5cf7-4998-9b09-2805df275b64",
+                            ConcurrencyStamp = "03876379-ce65-4d76-9304-e5137bd227d3",
                             Email = "privateuser@test.com",
                             EmailConfirmed = false,
                             FirstName = "Test",
@@ -313,9 +311,9 @@ namespace Nettside.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "PRIVATEUSER@TEST.COM",
                             NormalizedUserName = "PRIVATEUSER@TEST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEMAUPNf5Q7mnJKBbvLM68C1XjtJ+fouND5qeaKBC1K+dNcZjoKHT0naFHZI22dO5jQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAJJ8A8BUBhlF5J4BG2+aizD2QmL59Ue58e79oejSE/XFdxYtWUmzpwtDv3cCp+esg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e61c4696-50b7-412b-8df2-4c11c7123b50",
+                            SecurityStamp = "f95d5583-78a4-45f4-a419-d751f61f8873",
                             TwoFactorEnabled = false,
                             UserName = "privateUser@test.com"
                         });

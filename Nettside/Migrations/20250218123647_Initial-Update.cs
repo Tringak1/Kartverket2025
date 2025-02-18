@@ -4,10 +4,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace Nettside.Migrations
 {
     /// <inheritdoc />
-    public partial class demo : Migration
+    public partial class InitialUpdate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,11 +21,16 @@ namespace Nettside.Migrations
                 name: "AreaChanges",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(255)", nullable: false)
+                    Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
+                    UserName = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    GeoJson = table.Column<string>(type: "longtext", nullable: false)
+                    AreaJson = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Description = table.Column<string>(type: "longtext", nullable: false)
+                    Description = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Kommunenavn = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Fylkenavn = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
@@ -87,23 +94,6 @@ namespace Nettside.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-                })
-                .Annotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.CreateTable(
-                name: "GeoChange",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    GeoJson = table.Column<string>(type: "longtext", nullable: true)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Description = table.Column<string>(type: "longtext", nullable: true)
-                        .Annotation("MySql:CharSet", "utf8mb4")
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_GeoChange", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -234,6 +224,33 @@ namespace Nettside.Migrations
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { "1", "1", "Caseworker", "CASEWORKER" },
+                    { "2", "2", "PrivateUser", "PRIVATEUSER" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[,]
+                {
+                    { "1", 0, "2117e70e-e9bd-4c5c-a4aa-d382b9a4fa60", "caseworker@test.com", false, "Test", "Caseworker", false, null, "CASEWORKER@TEST.COM", "CASEWORKER@TEST.COM", "AQAAAAIAAYagAAAAEJd1MD5WqB4b8w0LeKzjLYzHXxQnAZWNHZopHBsaFZ3sW9ID080nldR+R2rv/75XhA==", null, false, "51be5229-ee54-44bc-a725-4597379d762a", false, "caseworker@test.com" },
+                    { "2", 0, "03876379-ce65-4d76-9304-e5137bd227d3", "privateuser@test.com", false, "Test", "PrivateUser", false, null, "PRIVATEUSER@TEST.COM", "PRIVATEUSER@TEST.COM", "AQAAAAIAAYagAAAAEAJJ8A8BUBhlF5J4BG2+aizD2QmL59Ue58e79oejSE/XFdxYtWUmzpwtDv3cCp+esg==", null, false, "f95d5583-78a4-45f4-a419-d751f61f8873", false, "privateUser@test.com" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "RoleId", "UserId" },
+                values: new object[,]
+                {
+                    { "1", "1" },
+                    { "2", "2" }
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -292,9 +309,6 @@ namespace Nettside.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
-
-            migrationBuilder.DropTable(
-                name: "GeoChange");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

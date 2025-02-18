@@ -32,20 +32,16 @@ namespace Nettside.Repositiories
         {
             return await appDbContext.AreaChanges.ToListAsync();
         }
-        public async Task<AreaChangeModel?> GetAsync(Guid id)
+        public async Task<AreaChangeModel?> FindCaseById(Guid id)
         {
             return await appDbContext.AreaChanges.FindAsync(id);
         }
         public async Task<AreaChangeModel?> UpdateAsync(AreaChangeModel areaChange)
         {
-            var existingAreaChange = await appDbContext.AreaChanges.FindAsync(areaChange.Id);
-            if (existingAreaChange == null)
-            {
-                return null;
-            }
-            appDbContext.Entry(existingAreaChange).CurrentValues.SetValues(areaChange);
+
+            appDbContext.AreaChanges.Update(areaChange);
             await appDbContext.SaveChangesAsync();
-            return existingAreaChange;
+            return areaChange;
         }
     }
 }

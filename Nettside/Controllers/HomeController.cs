@@ -3,10 +3,10 @@ using System.Diagnostics;
 using Nettside.Data;
 using Microsoft.AspNetCore.Authorization;
 using Nettside.Repositiories;
-using Nettside.ViewModels;
 using Nettside.Models;
 using Nettside.Models.ViewModel;
 using Microsoft.AspNetCore.Identity;
+using System;
 
 namespace Nettside.Controllers
 {
@@ -120,13 +120,49 @@ namespace Nettside.Controllers
         [HttpGet]
         public async Task<IActionResult> EditAreaChangeView(Guid id)
         {
-            var areaChange = await _areaChangeRepository.GetAsync(id);
-            if (areaChange == null)
+            var getDTOChanges = await _areaChangeRepository.FindCaseById(id);
+            if (getDTOChanges != null)
             {
-                return NotFound($"AreaChange with ID {id} not found.");
+                AreaChangesViewModel areaChangeViewModel = new AreaChangesViewModel
+                {
+
+                    ViewKommunenavn = getDTOChanges.Kommunenavn,
+                    ViewFylkenavn = getDTOChanges.Fylkenavn,
+                    ViewDescription = getDTOChanges.Description,
+                    ViewAreaJson = getDTOChanges.AreaJson
+                };
+
+                return View(areaChangeViewModel);
+
+
             }
 
-            return View(areaChange);
+            return null;
+        }
+
+        [Authorize(Roles = "Caseworker")]
+        [HttpPost]
+        public async Task<IActionResult> EditAreaChange(AreaChangesViewModel areaChangesViewModel)
+        {
+            var existingAreaChange = await _areaChangeRepository.FindCaseById(areaChangesViewModel.Id);
+            var currentUser = await _userManager.GetUserAsync(User);
+            if (existingAreaChange != null && currentUser != null)
+            {
+
+                AreaChangeModel areaChangeDTO = new AreaChangeModel
+                {
+                    Kommunenavn = areaChangesViewModel.ViewKommunenavn,
+                    AreaJson = areaChangesViewModel.ViewAreaJson,
+                    Fylkenavn = areaChangesViewModel.ViewFylkenavn,
+                    Description = areaChangesViewModel.ViewDescription,
+                    UserName = currentUser.UserName
+                };
+
+                await _areaChangeRepository.UpdateAsync(areaChangeDTO);
+                return RedirectToAction("AreaChangeOverview");
+            }
+
+            return null;
         }
 
 
@@ -134,7 +170,7 @@ namespace Nettside.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteAreaChange(Guid id)
         {
-            var areaChange = await _areaChangeRepository.GetAsync(id);
+            var areaChange = await _areaChangeRepository.FindCaseById(id);
             if (areaChange == null)
             {
                 return NotFound($"AreaChange with ID {id} not found.");

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Nettside.ViewModels
+namespace Nettside.Models.ViewModel
 {
     public class ChangePasswordViewModel
     {

@@ -12,8 +12,8 @@ using Nettside.Data;
 namespace Nettside.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241122122634_demo")]
-    partial class demo
+    [Migration("20250218123647_Initial-Update")]
+    partial class InitialUpdate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -49,6 +49,22 @@ namespace Nettside.Migrations
                         .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            ConcurrencyStamp = "1",
+                            Name = "Caseworker",
+                            NormalizedName = "CASEWORKER"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            ConcurrencyStamp = "2",
+                            Name = "PrivateUser",
+                            NormalizedName = "PRIVATEUSER"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -136,6 +152,18 @@ namespace Nettside.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "1",
+                            RoleId = "1"
+                        },
+                        new
+                        {
+                            UserId = "2",
+                            RoleId = "2"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -157,41 +185,31 @@ namespace Nettside.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Nettside.Models.AreaChange", b =>
+            modelBuilder.Entity("Nettside.Models.AreaChangeModel", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("varchar(255)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
+                    b.Property<string>("AreaJson")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("GeoJson")
+                    b.Property<string>("Description")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Fylkenavn")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kommunenavn")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
                     b.ToTable("AreaChanges");
-                });
-
-            modelBuilder.Entity("Nettside.Models.GeoChanges", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Description")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("GeoJson")
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("GeoChange");
                 });
 
             modelBuilder.Entity("Nettside.Models.Users", b =>
@@ -264,6 +282,44 @@ namespace Nettside.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "2117e70e-e9bd-4c5c-a4aa-d382b9a4fa60",
+                            Email = "caseworker@test.com",
+                            EmailConfirmed = false,
+                            FirstName = "Test",
+                            LastName = "Caseworker",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "CASEWORKER@TEST.COM",
+                            NormalizedUserName = "CASEWORKER@TEST.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJd1MD5WqB4b8w0LeKzjLYzHXxQnAZWNHZopHBsaFZ3sW9ID080nldR+R2rv/75XhA==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "51be5229-ee54-44bc-a725-4597379d762a",
+                            TwoFactorEnabled = false,
+                            UserName = "caseworker@test.com"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "03876379-ce65-4d76-9304-e5137bd227d3",
+                            Email = "privateuser@test.com",
+                            EmailConfirmed = false,
+                            FirstName = "Test",
+                            LastName = "PrivateUser",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "PRIVATEUSER@TEST.COM",
+                            NormalizedUserName = "PRIVATEUSER@TEST.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAJJ8A8BUBhlF5J4BG2+aizD2QmL59Ue58e79oejSE/XFdxYtWUmzpwtDv3cCp+esg==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "f95d5583-78a4-45f4-a419-d751f61f8873",
+                            TwoFactorEnabled = false,
+                            UserName = "privateUser@test.com"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

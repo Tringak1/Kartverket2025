@@ -1,11 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Nettside.ViewModels
+namespace Nettside.Models.ViewModel
 {
     public class LoginViewModel
     {
-        
-
         public string UserName { get; set; }
 
         [Required(ErrorMessage = "Password is required.")]

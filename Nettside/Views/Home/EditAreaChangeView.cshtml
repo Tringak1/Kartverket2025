@@ -1,4 +1,4 @@
-﻿@model Nettside.Models.AreaChangeModel
+﻿@model Nettside.Models.ViewModel.AreaChangesViewModel
 
 @{
     ViewData["Title"] = "Edit Area Change";
@@ -10,23 +10,23 @@
     <input type="hidden" asp-for="Id" />
 
     <div class="form-group">
-        <label asp-for="Description">Description</label>
-        <input asp-for="Description" class="form-control" />
+        <label asp-for="ViewDescription">Description</label>
+        <input asp-for="ViewDescription" class="form-control" />
     </div>
 
     <div class="form-group">
-        <label asp-for="AreaJson">Area JSON</label>
-        <textarea asp-for="AreaJson" class="form-control"></textarea>
+        <label asp-for="ViewAreaJson">Area JSON</label>
+        <textarea asp-for="ViewAreaJson" class="form-control"></textarea>
     </div>
 
     <div class="form-group">
-        <label asp-for="Kommunenavn">Municipality Name</label>
-        <input asp-for="Kommunenavn" class="form-control" />
+        <label asp-for="ViewKommunenavn">Municipality Name</label>
+        <input asp-for="ViewKommunenavn" class="form-control" />
     </div>
 
     <div class="form-group">
-        <label asp-for="Fylkenavn">County Name</label>
-        <input asp-for="Fylkenavn" class="form-control" />
+        <label asp-for="ViewFylkenavn">County Name</label>
+        <input asp-for="ViewFylkenavn" class="form-control" />
     </div>
 
     <button type="submit" class="btn btn-primary">Save Changes</button>
