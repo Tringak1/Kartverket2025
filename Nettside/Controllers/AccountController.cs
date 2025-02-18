@@ -178,7 +178,7 @@ namespace Nettside.Controllers
             if (signInresult != null && signInresult.Succeeded)
             {
 
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("RegisterAreaChange", "Home");
             }
             else
             {
