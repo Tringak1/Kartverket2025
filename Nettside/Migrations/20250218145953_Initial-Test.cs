@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Nettside.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialUpdate : Migration
+    public partial class InitialTest : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,8 +21,11 @@ namespace Nettside.Migrations
                 name: "AreaChanges",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
-                    UserName = table.Column<string>(type: "longtext", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    UserName = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    CaseWorker = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     AreaJson = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -238,8 +241,8 @@ namespace Nettside.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "1", 0, "2117e70e-e9bd-4c5c-a4aa-d382b9a4fa60", "caseworker@test.com", false, "Test", "Caseworker", false, null, "CASEWORKER@TEST.COM", "CASEWORKER@TEST.COM", "AQAAAAIAAYagAAAAEJd1MD5WqB4b8w0LeKzjLYzHXxQnAZWNHZopHBsaFZ3sW9ID080nldR+R2rv/75XhA==", null, false, "51be5229-ee54-44bc-a725-4597379d762a", false, "caseworker@test.com" },
-                    { "2", 0, "03876379-ce65-4d76-9304-e5137bd227d3", "privateuser@test.com", false, "Test", "PrivateUser", false, null, "PRIVATEUSER@TEST.COM", "PRIVATEUSER@TEST.COM", "AQAAAAIAAYagAAAAEAJJ8A8BUBhlF5J4BG2+aizD2QmL59Ue58e79oejSE/XFdxYtWUmzpwtDv3cCp+esg==", null, false, "f95d5583-78a4-45f4-a419-d751f61f8873", false, "privateUser@test.com" }
+                    { "1", 0, "0ff974ff-bfc9-46d4-8b14-e2d28e0aaec5", "caseworker@test.com", false, "Test", "Caseworker", false, null, "CASEWORKER@TEST.COM", "CASEWORKER@TEST.COM", "AQAAAAIAAYagAAAAEObFy4JAbf8adkMfioLW5wL5bN/n2nMg9PMUfFb7PKtXJt3DHagv+83JDYG0ocKoeg==", null, false, "00cc8d89-ba17-4dd2-a554-37ca78adb494", false, "caseworker@test.com" },
+                    { "2", 0, "a940c640-ebc7-4af4-8d96-3097f66f4bc7", "privateuser@test.com", false, "Test", "PrivateUser", false, null, "PRIVATEUSER@TEST.COM", "PRIVATEUSER@TEST.COM", "AQAAAAIAAYagAAAAEJUgn7iSjM4mjViUkd33UdGMVYXR9oYZPglE6gi3pWNw9X3rYgIrkDJJXM7/lCq67w==", null, false, "ccedf674-d8e6-4744-9b0d-6c8290de40bb", false, "privateUser@test.com" }
                 });
 
             migrationBuilder.InsertData(

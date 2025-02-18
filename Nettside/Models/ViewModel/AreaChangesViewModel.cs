@@ -2,7 +2,7 @@
 {
     public class AreaChangesViewModel
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string? ViewAreaJson { get; set; }
         public string? ViewDescription { get; set; }
         public string? ViewKommunenavn { get; set; }

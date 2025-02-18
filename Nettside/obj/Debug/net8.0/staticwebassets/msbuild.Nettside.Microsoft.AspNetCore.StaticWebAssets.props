@@ -2172,8 +2172,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>v78t325kt9</Fingerprint>
-      <Integrity>20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=</Integrity>
+      <Fingerprint>j35snbr7ye</Fingerprint>
+      <Integrity>MQS1JlBNDWH9MJmkUh6H9zLMwxdN7FTgjea6i94+Ff8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\leaflet (1)\leaflet.js'))</OriginalItemSpec>
@@ -2190,8 +2190,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>k8gu1njvky</Fingerprint>
-      <Integrity>tPonvXioSHRQt1+4ztWR5mz/1KG1X3yHNzVXprP2gLo=</Integrity>
+      <Fingerprint>7zbvsipx0c</Fingerprint>
+      <Integrity>Y0Ki5d8X0X1H2YiS590G4GgQTUnf6kP26s5XsJ2w76Q=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\leaflet (1)\leaflet-src.js'))</OriginalItemSpec>
@@ -2208,8 +2208,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ha0f7arjmw</Fingerprint>
-      <Integrity>Oe6TRk8R/jhHE35QwNyBifcGxGDjaYnqeHG/fVQPMwY=</Integrity>
+      <Fingerprint>xluy1rl9ai</Fingerprint>
+      <Integrity>i7N/sDD+OoSdbNWYx4paYveaHkkprfXimr67+kGDy/M=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\leaflet (1)\leaflet-src.esm.js'))</OriginalItemSpec>
