@@ -53,6 +53,11 @@ builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/Account/Login/";
     options.AccessDeniedPath = "/Account/AccessDenied/";
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+    options.SlidingExpiration = true; // extends session if active
+    options.Cookie.HttpOnly = true; // protects against XSS
+
+    
 });
 
 
