@@ -17,24 +17,26 @@
             @Html.AntiForgeryToken() @* Adds a CSRF token for security *@
             <div class="text-danger"></div>
 
-        @* UserName input field *@
+            @* UserName input field *@
             <div class="mb-3">
                 <label asp-for="UserName" class="form-label"></label>
                 <input asp-for="UserName" class="form-control" />
                 <span asp-validation-for="UserName" class="text-danger"></span>
             </div>
-        @* Password input field *@
+            @* Password input field *@
             <div class="mb-3">
                 <label asp-for="Password" class="form-label"></label>
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 
-            @* Forgor password link *@
+            @* Forgot password link *@
             <div class="float-end">
-                <a asp-controller="Account" asp-action="VerifyPassword" class="text-decoration-none" style="color: rgba(21, 102, 48, 1)">
-                    Forgot password?
-                </a>
+               
+                    <a asp-controller="Account" asp-action="ForgotPassword" asp-route-username="@Model.UserName" class="text-decoration-none" style="color: rgba(21, 102, 48, 1)">
+                        Forgot password?
+                    </a>
+                
             </div>
             
             @* Login button *@
@@ -58,4 +60,5 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
     }
+
 }
