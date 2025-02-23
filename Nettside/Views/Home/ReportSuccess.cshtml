@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Report Submitted Successfully";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml"; 
+}
+
+<div class="container">
+    <div class="alert alert-success">
+        <h2>@ViewBag.SuccessMessage</h2>
+        <p>Your report has been submitted successfully. Our team will review it shortly.</p>
+        <p>Thank you for helping us improve our services!</p>
+    </div>
+
+    <div class="mt-4">
+        <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Return to Home</a>
+    </div>
+</div>
