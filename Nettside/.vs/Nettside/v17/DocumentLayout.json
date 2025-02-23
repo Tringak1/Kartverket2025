@@ -11,16 +11,16 @@
       "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C37192F2-936E-4E44-A519-AB9860CECDA6}|Nettside.csproj|c:\\users\\tring\\documents\\eksamenkonting202\\kartverket2025\\nettside\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -103,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Models\\Users.cs",
               "RelativeDocumentMoniker": "Models\\Users.cs",
@@ -142,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -161,7 +161,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\tring\\Documents\\eksamenkonting202\\Kartverket2025\\Nettside\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAUwEwAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAUwE8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T17:38:13.382Z",
               "EditorCaption": ""
