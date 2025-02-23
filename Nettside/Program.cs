@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using Nettside.Data;
 using Nettside.Models;
 using Nettside.Repositiories;
+using Nettside.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,7 +21,8 @@ new MySqlServerVersion(new Version(10, 5, 9))));
 builder.Services.AddScoped<IAreaChangeRepository, AreaChangeRepository>();
 
 
-
+// Register the EmailSender service
+builder.Services.AddScoped<IEmailSender, EmailSender>();
 
 // configuring identity
 builder.Services.AddIdentity<Users, IdentityRole>(options =>

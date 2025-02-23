@@ -1,9 +1,15 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.WebUtilities;
 using Nettside.Controllers;
 using Nettside.Models;
 using Nettside.Models.ViewModel;
+using System.Reflection.Metadata.Ecma335;
+using System.Text;
+using System.Text.Encodings.Web;
 
 
 namespace Nettside.Controllers
@@ -17,6 +23,7 @@ namespace Nettside.Controllers
     {
         private readonly SignInManager<Users> signInManager; // service provided by asp.net core identity
         private readonly UserManager<Users> userManager;    // service provided by asp.net core identity
+        private readonly IEmailSender _emailSender;
 
 
 
@@ -25,10 +32,11 @@ namespace Nettside.Controllers
         /// </summary>
         /// <param name="signInManager">a service to manage user sign-in operations</param>
         /// <param name="userManager">a service to manage user interactions</param>
-        public AccountController(SignInManager<Users> signInManager, UserManager<Users> userManager) // constructor to inject signInManager and UserManager
+        public AccountController(SignInManager<Users> signInManager, UserManager<Users> userManager, IEmailSender emailSender) // constructor to inject signInManager and UserManager
         {
             this.signInManager = signInManager;
             this.userManager = userManager;
+            _emailSender = emailSender;
         }
 
 
@@ -149,7 +157,8 @@ namespace Nettside.Controllers
         [AllowAnonymous]
         public IActionResult Login()
         {
-            return View();
+            var model = new LoginViewModel();
+            return View(model);
         }
 
 
@@ -244,16 +253,128 @@ namespace Nettside.Controllers
         }
 
 
+        [AllowAnonymous]
+        [HttpGet]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
 
-        // Displays the change password page
 
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var user = await userManager.FindByEmailAsync(model.Email);
+            if (user == null)
+            {
+                // Dont reveal that the user does not exist
+                return RedirectToAction("ForgotPasswordConfirmation");
+            }
+
+            var token = await userManager.GeneratePasswordResetTokenAsync(user);
+            var callBackUrl = Url.Action("ResetPassword", "Account", new { token, email = model.Email }, Request.Scheme);
+
+            Console.WriteLine("Reset Password URL: " + callBackUrl);
+
+            await _emailSender.SendEmailAsync(model.Email, "Reset password",
+                $"Click <a href='{(callBackUrl)}'>here</a> to reset your password.");
+
+
+            return RedirectToAction("ForgotPasswordConfirmation");
+        }
+
+
+
+
+
+        // Confirmation page after sending email
+
+        [AllowAnonymous]
+        public IActionResult ForgotPasswordConfirmation()
+        {
+            return View();
+        }
+
+
+        [AllowAnonymous]
+        [HttpGet]
+        public IActionResult ResetPassword(string token, string email)
+        {
+            if (token == null || email == null)
+            {
+                return BadRequest("Invalid password reset request");
+            }
+
+                return View(new ResetPasswordViewModel { Token = token, Email = email });
+
+            }
+
+           
+        
+
+
+
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+
+                var user = await userManager.FindByEmailAsync(model.Email);
+                if (user == null)
+                {
+                    return RedirectToAction("ResetPasswordConfirmation");
+                }
+
+                var result = await userManager.ResetPasswordAsync(user, model.Token, model.Password);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction("ResetPasswordConfirmation");
+            }
+
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+
+                    return View(model);
+                }
+
+              
+            
+
+          
+
+
+
+
+
+      [AllowAnonymous]
+      public IActionResult ResetPasswordConfirmation()
+       {
+          return View();
+       }
+
+
+
+        
+
+       // only authenticated users can change their password
+       [HttpGet]
         public IActionResult ChangePassword(string username)
         {
-            if (string.IsNullOrEmpty(username))
-            {
-                return RedirectToAction("ChangePassword", "Account");
-            }
-            return View(new ChangePasswordViewModel { Email = username });
+            return View();
         }
 
 
@@ -265,43 +386,39 @@ namespace Nettside.Controllers
         /// </summary>
         /// <param name="model">the username associated with the account.</param>
         /// <returns></returns>
+
         [ValidateAntiForgeryToken]
         [HttpPost]
         public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                var user = await userManager.FindByEmailAsync(model.Email);
-                if (user != null)
-                {
-                    var result = await userManager.RemovePasswordAsync(user);
-                    if (result.Succeeded)
-                    {
-                        result = await userManager.AddPasswordAsync(user, model.NewPassword);
-                        return RedirectToAction("Login", "Account");
-                    }
-                    else
-                    {
-                        foreach (var error in result.Errors)
-                        {
-                            ModelState.AddModelError("", error.Description);
-                        }
-
-                        return View(model);
-                    }
-                }
-                else
-                {
-                    ModelState.AddModelError("", "Email not found.");
-                    return View(model);
-                }
-            }
-            else
-            {
-                ModelState.AddModelError("", "Something went wrong. Please try again.");
                 return View(model);
             }
+
+            var user = await userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+
+
+            var result = await userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+            if (result.Succeeded)
+            {
+                await signInManager.RefreshSignInAsync(user);
+                return RedirectToAction("ProfilePage", new { Message = "Your password has been changed." });
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError("", error.Description);
+            }
+
+            return View(model);
         }
+
 
 
 
