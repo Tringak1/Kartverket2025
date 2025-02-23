@@ -86,12 +86,32 @@ namespace Nettside.Controllers
 
                 await _areaChangeRepository.AddAsync(newAreaChange);
 
-                return RedirectToAction("AreaChangeOverview", "Home");
+                // set success message
+                TempData["ReportSuccess"] = "Your report has been submitted successfully!";
 
+
+                // redirect based on user role
+                if (User.IsInRole("Caseworker"))
+                {
+                    return RedirectToAction("AreaChangeOverview", "Home");
+                }
+                else
+                {
+                    return RedirectToAction("ReportSuccess", "Home");
+                }
             }
 
             return BadRequest("An error occured");
            
+        }
+
+
+        [Authorize(Roles = "PrivateUser")]
+        [HttpGet]
+        public IActionResult ReportSuccess()
+        {
+            ViewBag.SuccessMessage = TempData["ReportSuccess"] as string;
+            return View();
         }
 
 
