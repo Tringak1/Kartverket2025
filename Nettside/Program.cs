@@ -74,6 +74,32 @@ builder.Services.Configure<EmailSettings>(options =>
 
 var app = builder.Build();
 
+
+// enable CSP middleware
+app.Use(async (context, next) =>
+{
+    context.Response.Headers.Append("X-XSS-Protection", "1; mode=block");
+    context.Response.Headers.Append("X-Frame-Options", "DENY");
+    context.Response.Headers.Append("X-Content-Type-Options", "nosniff");
+    context.Response.Headers.Append("Referrer-Policy", "strict-origin-when-cross-origin");
+    context.Response.Headers.Append("Strict-Transport-Security", "max-age=31536000; includeSubDomains; preload");
+
+    context.Response.Headers.Append("Content-Security-Policy",
+        "default-src 'self'; " +
+        "script-src 'self' https://cdnjs.cloudflare.com/ https://unpkg.com/ https://cdn.jsdelivr.net/ 'unsafe-inline' 'unsafe-eval'; " +
+        "style-src 'self' https://cdnjs.cloudflare.com/ https://unpkg.com/ https://fonts.googleapis.com/ 'unsafe-inline'; " +
+        "font-src 'self' https://fonts.gstatic.com/ https://ka-f.fontawesome.com/ https://kit.fontawesome.com/ data:; " +
+        "img-src 'self' data: https:; " +
+        "connect-src 'self' wss://localhost:* https://api.kartverket.no/ https://%2A.kartverket.no/ https://ka-f.fontawesome.com/ https://nominatim.openstreetmap.org/; " +
+        "object-src 'none';");
+
+    await next();
+});
+
+
+
+
+
 // Run migrations and add seed-data
 using (var scope = app.Services.CreateScope())
 {
