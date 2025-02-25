@@ -19,6 +19,7 @@ namespace Nettside.Data
         }
 
         public DbSet<AreaChangeModel> AreaChanges { get; set; }
+        public DbSet<SubmitStatus> StatusState { get; set;  }
 
         /// <summary>
         /// Configures the model properties and seeds the database with initial data.
@@ -109,6 +110,28 @@ namespace Nettside.Data
 
             modelBuilder.Entity<AreaChangeModel>()
                 .HasKey(uniqueThis => uniqueThis.Id);
+
+            modelBuilder.Entity<SubmitStatus>()
+                .HasKey(uniqueiD => uniqueiD.Id);
+
+
+            modelBuilder.Entity<SubmitStatus>().HasData(
+
+                new SubmitStatus { Id = 1, Status = "Under behandling" },
+                 new SubmitStatus { Id = 2, Status = "Ferdig behandlet" },
+                  new SubmitStatus { Id = 3, Status = "Avslått" },
+                  new SubmitStatus { Id = 4, Status = "Ikke påbegynt" }
+              );
+
+
+            modelBuilder.Entity<AreaChangeModel>()
+                .HasOne(s => s.SubmitStatusModel)
+                .WithMany()
+                .HasForeignKey(i => i.StatusId)
+                .OnDelete(DeleteBehavior.Cascade);
+
         }
     }
+
+
 }

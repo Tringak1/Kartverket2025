@@ -2,6 +2,7 @@
 @using Nettside.Models
 @inject SignInManager<Users> signInManager
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +35,22 @@
                         <a class="nav-link" asp-controller="Home" asp-action="RegisterAreaChange">Register Area Change</a>
                     </li>
                     }
+
+                        @if (signInManager.IsSignedIn(User) && (User.IsInRole("Caseworker")))
+                        {
+                            <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="AreaChangeOverview"> Sak oversikt </a> 
+                            </li>
+                        }
+
+                        @if (signInManager.IsSignedIn(User) && (User.IsInRole("PrivateUser")))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="UserSubmitHistory">Mine saker</a>
+                            </li>
+                        }
+
+
 
                     <partial name="_LoginPartial" />
                 </ul>

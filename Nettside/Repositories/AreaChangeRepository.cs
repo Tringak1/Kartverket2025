@@ -30,11 +30,13 @@ namespace Nettside.Repositiories
         }
         public async Task<IEnumerable<AreaChangeModel>> GetAllAsync()
         {
-            return await appDbContext.AreaChanges.ToListAsync();
+            return await appDbContext.AreaChanges.Include(s => s.SubmitStatusModel).ToListAsync();
         }
         public async Task<AreaChangeModel?> FindCaseById(int id)
         {
-            return await appDbContext.AreaChanges.FindAsync(id);
+            return await appDbContext.
+                AreaChanges.Include(s => s.SubmitStatusModel)
+                .Where(x => x.Id == id).FirstOrDefaultAsync();
         }
         public async Task<AreaChangeModel?> UpdateAsync(AreaChangeModel areaChange)
         {

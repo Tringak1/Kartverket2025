@@ -1,4 +1,7 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Users> signInManager
+
+@{
     ViewData["Title"] = "Report Submitted Successfully";
     Layout = "~/Views/Shared/_AccountLayout.cshtml"; 
 }
@@ -14,3 +17,19 @@
         <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Return to Home</a>
     </div>
 </div>
+
+@if ((User.IsInRole("Caseworker")))
+{
+    <div class="container">
+        <div class="alert alert-success">
+            
+            <p>Your report has been finished.</p>
+          
+            
+        </div>
+
+        <div class="mt-4">
+            <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Return to Home</a>
+        </div>
+    </div>
+}

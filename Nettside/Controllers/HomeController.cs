@@ -16,7 +16,7 @@ namespace Nettside.Controllers
     /// </summary>
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger; // Logger for tracking information and errors
+        
 
         private readonly IAreaChangeRepository _areaChangeRepository; // Repository for managing AreaChanges
 
@@ -26,17 +26,14 @@ namespace Nettside.Controllers
         /// <summary>
         /// Constructor for injecting dependencies like the logger and repositories.
         /// </summary>
-        public HomeController(
-            ILogger<HomeController> logger,
-
-            IAreaChangeRepository areaChangeRepository, UserManager<Users> userManager)
+        public HomeController(IAreaChangeRepository areaChangeRepository, UserManager<Users> userManager)
         {
-            _logger = logger;
-
             _areaChangeRepository = areaChangeRepository;
 
             _userManager = userManager;
         }
+
+
 
 
         /// <summary>
@@ -76,13 +73,16 @@ namespace Nettside.Controllers
             {
                 var newAreaChange = new AreaChangeModel
                 {
-                   
+
                     UserName = currentUser.UserName,
+                    Email = currentUser.Email,
                     Kommunenavn = areaChangesViewModel.ViewKommunenavn,
                     Fylkenavn = areaChangesViewModel.ViewFylkenavn,
                     Description = areaChangesViewModel.ViewDescription,
-                    AreaJson = areaChangesViewModel.ViewAreaJson
-                };
+                    AreaJson = areaChangesViewModel.ViewAreaJson,
+                    StatusId = 4,
+                    Date = areaChangesViewModel.ViewDate
+                }; 
 
                 await _areaChangeRepository.AddAsync(newAreaChange);
 
@@ -106,7 +106,7 @@ namespace Nettside.Controllers
         }
 
 
-        [Authorize(Roles = "PrivateUser")]
+        [Authorize(Roles = "Caseworker, PrivateUser")]
         [HttpGet]
         public IActionResult ReportSuccess()
         {
@@ -120,14 +120,31 @@ namespace Nettside.Controllers
         /// Displays an overview of registered area and geo changes.
         /// </summary>
         /// <returns>A view with a list of changes.</returns>
-        [Authorize(Roles = "Caseworker, PrivateUser")]
+        [Authorize(Roles = "Caseworker")]
         [HttpGet]
         public async Task<IActionResult> AreaChangeOverview()
         {
 
-            var areaChanges = await _areaChangeRepository.GetAllAsync();    
+            var getDTOChanges = await _areaChangeRepository.GetAllAsync();
 
-            return View(areaChanges);
+            if (getDTOChanges != null && getDTOChanges.Any())
+            {
+                var areaChangeViewModel = getDTOChanges.Select(change => new AreaChangesViewModel
+                {
+                    ViewKommunenavn = change.Kommunenavn,
+                    ViewFylkenavn = change.Fylkenavn,
+                    ViewDescription = change.Description,
+                    ViewAreaJson = change.AreaJson,
+                    Email = change.Email,
+                    Submitter = change.UserName,
+                    Id = change.Id,
+                    Status = change.SubmitStatusModel.Status
+                }).ToList();  // `ToList()` should be applied after `Select`, not before
+
+                return View(areaChangeViewModel);
+            }
+
+            return NotFound();  // Return a proper HTTP response instead of `null`
         }
 
 
@@ -159,6 +176,10 @@ namespace Nettside.Controllers
 
             return null;
         }
+
+
+
+
 
         [Authorize(Roles = "Caseworker")]
         [HttpPost]
@@ -193,12 +214,86 @@ namespace Nettside.Controllers
             var areaChange = await _areaChangeRepository.FindCaseById(id);
             if (areaChange == null)
             {
+                
                 return NotFound($"AreaChange with ID {id} not found.");
             }
 
             await _areaChangeRepository.DeleteAsync(id);
             return RedirectToAction("AreaChangeOverview", "Home");
         }
+
+
+
+        [Authorize(Roles = "Caseworker")]
+        [HttpPost]
+        public async Task<IActionResult> FinishReport(AreaChangesViewModel areaChangesViewModel)
+        {
+            var existingAreaChange = await _areaChangeRepository.FindCaseById(areaChangesViewModel.Id);
+
+            if (existingAreaChange != null && existingAreaChange.StatusId != 2)
+            {
+
+                existingAreaChange.StatusId = 2;
+                //ExistingAreaChange.Date = DateTime.UtcNow; 
+
+                await _areaChangeRepository.UpdateAsync(existingAreaChange);
+                return RedirectToAction("ReportSuccess");
+            }
+
+            return BadRequest("Saken er allerede ferdigbehandlet");
+
+        }
+
+
+            [Authorize(Roles = "Caseworker")]
+            [HttpPost]
+            public async Task<IActionResult> DeniedReport(AreaChangesViewModel areaChangesViewModel)
+            {
+                var existingAreaChange = await _areaChangeRepository.FindCaseById(areaChangesViewModel.Id);
+                if (existingAreaChange != null)
+                {
+                    existingAreaChange.StatusId = 3;
+             
+                }
+
+                await _areaChangeRepository.UpdateAsync(existingAreaChange);
+                return View(existingAreaChange);
+
+
+            }
+
+       [Authorize(Roles = "Caseworker, PrivateUser")]
+        [HttpGet]
+        public async Task<IActionResult> UserSubmitHistory()
+        {
+
+            var getSubmits = await _areaChangeRepository.GetAllAsync();
+            var currentSubmitter = await _userManager.GetUserAsync(User);
+
+            if (getSubmits != null && currentSubmitter != null)
+            {
+                var areaChangesViewModel = getSubmits.Where(e => e.Email == currentSubmitter.Email)
+                    .Select(r => new AreaChangesViewModel
+                    {
+                        CaseHandler = r.CaseWorker ?? "Ingen sakbehandler",
+                        ViewDescription = r.Description,
+                        ViewAreaJson = r.AreaJson,
+                        ViewFylkenavn = r.Fylkenavn,
+                        ViewKommunenavn = r.Kommunenavn,
+                        Id = r.Id,
+                        Status = r.SubmitStatusModel.Status
+                    }
+                    );  
+                return View(areaChangesViewModel);
+
+
+            }
+
+            return null;
+
+        }
+
+
     }
 }
 

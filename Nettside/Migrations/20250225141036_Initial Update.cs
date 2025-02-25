@@ -9,37 +9,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Nettside.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialTest : Migration
+    public partial class InitialUpdate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterDatabase()
-                .Annotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.CreateTable(
-                name: "AreaChanges",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    UserName = table.Column<string>(type: "longtext", nullable: true)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    CaseWorker = table.Column<string>(type: "longtext", nullable: true)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    AreaJson = table.Column<string>(type: "longtext", nullable: true)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Description = table.Column<string>(type: "longtext", nullable: true)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Kommunenavn = table.Column<string>(type: "longtext", nullable: true)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Fylkenavn = table.Column<string>(type: "longtext", nullable: true)
-                        .Annotation("MySql:CharSet", "utf8mb4")
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AreaChanges", x => x.Id);
-                })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
@@ -97,6 +72,21 @@ namespace Nettside.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "StatusState",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Status = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4")
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_StatusState", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -227,6 +217,43 @@ namespace Nettside.Migrations
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
+            migrationBuilder.CreateTable(
+                name: "AreaChanges",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    UserName = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Date = table.Column<DateTime>(type: "datetime(6)", nullable: true),
+                    Email = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    CaseWorker = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    AreaJson = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Description = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Kommunenavn = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Fylkenavn = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    StatusId = table.Column<int>(type: "int", nullable: false),
+                    StatusDescription = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4")
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AreaChanges", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AreaChanges_StatusState_StatusId",
+                        column: x => x.StatusId,
+                        principalTable: "StatusState",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
@@ -241,8 +268,19 @@ namespace Nettside.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "1", 0, "0ff974ff-bfc9-46d4-8b14-e2d28e0aaec5", "caseworker@test.com", false, "Test", "Caseworker", false, null, "CASEWORKER@TEST.COM", "CASEWORKER@TEST.COM", "AQAAAAIAAYagAAAAEObFy4JAbf8adkMfioLW5wL5bN/n2nMg9PMUfFb7PKtXJt3DHagv+83JDYG0ocKoeg==", null, false, "00cc8d89-ba17-4dd2-a554-37ca78adb494", false, "caseworker@test.com" },
-                    { "2", 0, "a940c640-ebc7-4af4-8d96-3097f66f4bc7", "privateuser@test.com", false, "Test", "PrivateUser", false, null, "PRIVATEUSER@TEST.COM", "PRIVATEUSER@TEST.COM", "AQAAAAIAAYagAAAAEJUgn7iSjM4mjViUkd33UdGMVYXR9oYZPglE6gi3pWNw9X3rYgIrkDJJXM7/lCq67w==", null, false, "ccedf674-d8e6-4744-9b0d-6c8290de40bb", false, "privateUser@test.com" }
+                    { "1", 0, "23da4497-f973-4b64-9958-c565c323b4e1", "caseworker@test.com", false, "Test", "Caseworker", false, null, "CASEWORKER@TEST.COM", "CASEWORKER@TEST.COM", "AQAAAAIAAYagAAAAEKQP/1ULxZkuyCACb+9ffeBo4xHkA1aKdlEZAntv0gjKa6cnIpZjnjmvfyNc2AwEeA==", null, false, "f06eff28-d7e6-4408-b16a-e8ccb1d5406a", false, "caseworker@test.com" },
+                    { "2", 0, "0242e1e3-185b-40f4-a40f-f8bb6ecc82ac", "privateuser@test.com", false, "Test", "PrivateUser", false, null, "PRIVATEUSER@TEST.COM", "PRIVATEUSER@TEST.COM", "AQAAAAIAAYagAAAAEFkillfAKa8L/NiAJwCEuTBN7We5X1UADwU3R/TwtHKx62YA9HpSvrItXoeBr07/Ug==", null, false, "5438991f-5caf-483d-bc41-53fdd03467bf", false, "privateUser@test.com" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "StatusState",
+                columns: new[] { "Id", "Status" },
+                values: new object[,]
+                {
+                    { 1, "Under behandling" },
+                    { 2, "Ferdig behandlet" },
+                    { 3, "Avslått" },
+                    { 4, "Ikke påbegynt" }
                 });
 
             migrationBuilder.InsertData(
@@ -253,6 +291,11 @@ namespace Nettside.Migrations
                     { "1", "1" },
                     { "2", "2" }
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AreaChanges_StatusId",
+                table: "AreaChanges",
+                column: "StatusId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -312,6 +355,9 @@ namespace Nettside.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "StatusState");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

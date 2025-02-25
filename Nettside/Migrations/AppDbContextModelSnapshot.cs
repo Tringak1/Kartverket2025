@@ -196,7 +196,13 @@ namespace Nettside.Migrations
                     b.Property<string>("CaseWorker")
                         .HasColumnType("longtext");
 
+                    b.Property<DateTime?>("Date")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<string>("Description")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Email")
                         .HasColumnType("longtext");
 
                     b.Property<string>("Fylkenavn")
@@ -205,12 +211,58 @@ namespace Nettside.Migrations
                     b.Property<string>("Kommunenavn")
                         .HasColumnType("longtext");
 
+                    b.Property<string>("StatusDescription")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("StatusId")
+                        .HasColumnType("int");
+
                     b.Property<string>("UserName")
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("StatusId");
+
                     b.ToTable("AreaChanges");
+                });
+
+            modelBuilder.Entity("Nettside.Models.SubmitStatus", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Status")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("StatusState");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Status = "Under behandling"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Status = "Ferdig behandlet"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Status = "Avslått"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Status = "Ikke påbegynt"
+                        });
                 });
 
             modelBuilder.Entity("Nettside.Models.Users", b =>
@@ -289,7 +341,7 @@ namespace Nettside.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0ff974ff-bfc9-46d4-8b14-e2d28e0aaec5",
+                            ConcurrencyStamp = "23da4497-f973-4b64-9958-c565c323b4e1",
                             Email = "caseworker@test.com",
                             EmailConfirmed = false,
                             FirstName = "Test",
@@ -297,9 +349,9 @@ namespace Nettside.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "CASEWORKER@TEST.COM",
                             NormalizedUserName = "CASEWORKER@TEST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEObFy4JAbf8adkMfioLW5wL5bN/n2nMg9PMUfFb7PKtXJt3DHagv+83JDYG0ocKoeg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKQP/1ULxZkuyCACb+9ffeBo4xHkA1aKdlEZAntv0gjKa6cnIpZjnjmvfyNc2AwEeA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "00cc8d89-ba17-4dd2-a554-37ca78adb494",
+                            SecurityStamp = "f06eff28-d7e6-4408-b16a-e8ccb1d5406a",
                             TwoFactorEnabled = false,
                             UserName = "caseworker@test.com"
                         },
@@ -307,7 +359,7 @@ namespace Nettside.Migrations
                         {
                             Id = "2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a940c640-ebc7-4af4-8d96-3097f66f4bc7",
+                            ConcurrencyStamp = "0242e1e3-185b-40f4-a40f-f8bb6ecc82ac",
                             Email = "privateuser@test.com",
                             EmailConfirmed = false,
                             FirstName = "Test",
@@ -315,9 +367,9 @@ namespace Nettside.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "PRIVATEUSER@TEST.COM",
                             NormalizedUserName = "PRIVATEUSER@TEST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJUgn7iSjM4mjViUkd33UdGMVYXR9oYZPglE6gi3pWNw9X3rYgIrkDJJXM7/lCq67w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFkillfAKa8L/NiAJwCEuTBN7We5X1UADwU3R/TwtHKx62YA9HpSvrItXoeBr07/Ug==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ccedf674-d8e6-4744-9b0d-6c8290de40bb",
+                            SecurityStamp = "5438991f-5caf-483d-bc41-53fdd03467bf",
                             TwoFactorEnabled = false,
                             UserName = "privateUser@test.com"
                         });
@@ -372,6 +424,17 @@ namespace Nettside.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Nettside.Models.AreaChangeModel", b =>
+                {
+                    b.HasOne("Nettside.Models.SubmitStatus", "SubmitStatusModel")
+                        .WithMany()
+                        .HasForeignKey("StatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("SubmitStatusModel");
                 });
 #pragma warning restore 612, 618
         }

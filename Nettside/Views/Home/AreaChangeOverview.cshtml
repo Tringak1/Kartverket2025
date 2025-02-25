@@ -1,5 +1,6 @@
 ﻿@using Nettside.Models.ViewModel
-@model IEnumerable<Nettside.Models.AreaChangeModel>
+@model IEnumerable<Nettside.Models.ViewModel.AreaChangesViewModel>
+
 
 
 @{
@@ -36,6 +37,7 @@
         <th>Beskrivelse</th>
         <th>Kommunenavn</th>
         <th>Fylkenavn</th>
+        <th>Status</th>
         </tr>
         </thead>
         <tbody class="table-body">
@@ -44,17 +46,28 @@
         {
             <tr>
                 <td>@change.Id</td>
-               <td>@change.AreaJson</td>
-                <td>@change.Description</td>
-                 <td>@change.Kommunenavn</td>
-                 <td>@change.Fylkenavn</td>
+               <td>@change.ViewAreaJson</td>
+                <td>@change.ViewDescription</td>
+                 <td>@change.ViewKommunenavn</td>
+                 <td>@change.ViewFylkenavn</td>
+                 <td>@change.Status</td>
+
             
             <td>
                 <a href="@Url.Action("EditAreaChangeView", "Home", new { id = change.Id})" class="btn btn-warning">Edit</a>
                             <form asp-action="DeleteAreaChange" asp-controller="Home" method="post" style="display:inline;">
                                 <input type="hidden" name="id" value="@change.Id" />
                                 <button type="submit" class="btn btn-danger">Delete</button>
+                                
                             </form>
+
+                            <form asp-action="FinishReport" asp-controller="Home" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@change.Id" />
+                                <button type="submit" class="btn btn-success">Finish</button>
+                                
+                            </form>
+
+
 
             </td>
             </tr>

@@ -7,6 +7,13 @@
         public string? ViewDescription { get; set; }
         public string? ViewKommunenavn { get; set; }
         public string? ViewFylkenavn { get; set; }
+        public string? Email { get; set; }
+
+        public DateTime? ViewDate { get; set; }
+        public string? CaseHandler { get; set; } 
+        public string? Submitter { get; set; }
+
+        public string? Status { get; set; }
 
     }
 }
