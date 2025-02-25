@@ -9,8 +9,3 @@ Når det gjelder innlogging har vi utviklet en innloggingspage hvor det er mulig
 Etter at en kartbruker har loggen seg inn eller registrert seg inn på nettsiden vår, vil du få muligheten til å sende endring i kart eller eventuelle feil. Du har mulighet til å sette nøyaktig posisjonpå kartet for å være mer nøyaktig eller så kan du bare skrive skrive inn adresse. På høyre side øverst vil du også få en menubar hvor du kan se på case logger du har sendt inn. 
 
 Designet for vår nettside følger lik design som Kaartverkets orginale nettside, og dette er grunnet for å ha mest lik implementasjon så bruker kan gjenkjenne bedre og blir lettere for deres bruk av nettside. Dette startet vi med tidlig i prosjektet når vi lagde prototype for vår nettside. 
-![bilde av skjsks](image.png)
-
-![alt text](image-1.png)
-
-![alt text](image-2.png)
