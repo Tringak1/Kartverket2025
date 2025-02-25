@@ -6,6 +6,6 @@ Som en gruppe på fire studentmedlemmer har vi slått oss sammen for å komme me
 
 Når det gjelder innlogging har vi utviklet en innloggingspage hvor det er mulig å kunne lage en "account" inne på nettside, hvor du enten kan registrere deg eller logge inn som en allerede eksisterende bruker. I tillegg til at dersom du ikke får logget deg inn via en eksisterende konto, har du mulighet til å bruke "forgot password" funksjons knappen. 
 
-Etter at en kartbruker har loggen seg inn eller registrert seg inn på nettsiden vår, vil du få muligheten til å sende endring i kart eller eventuelle feil. Du har mulighet til å sette nøyaktig posisjonpå kartet for å være mer nøyaktig eller så kan du bare skrive skrive inn adresse. På høyre side øverst vil du også få en menubar hvor du kan se på case logger du har sendt inn og profilepage. 
+Etter at en kartbruker har loggen seg inn eller registrert seg inn på nettsiden vår, vil du få muligheten til å sende endring i kart eller eventuelle feil. Du har mulighet til å sette nøyaktig posisjonpå kartet for å være mer nøyaktig eller så kan du bare skrive skrive inn adresse. På høyre side øverst vil du også få en menubar hvor du kan se på case logger du har sendt inn. 
 
-
+Designet for vår nettside følger lik design som Kaartverkets orginale nettside, og dette er grunnet for å ha mest lik implementasjon så bruker kan gjenkjenne bedre og blir lettere for deres bruk av nettside. Dette startet vi med tidlig i prosjektet når vi lagde prototype for vår nettside. 
