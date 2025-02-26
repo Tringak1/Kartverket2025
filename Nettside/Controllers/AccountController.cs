@@ -60,33 +60,42 @@ namespace Nettside.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel registerViewModel)
         {
-            var createUser = new Users
+            if (!ModelState.IsValid)
             {
-                FirstName = registerViewModel.FirstName,
-                LastName = registerViewModel.LastName,
-                Email = registerViewModel.Email,
-                UserName = registerViewModel.Username
-            };
-
-            // Attempt to create the user
-            var applicationResult = await userManager.CreateAsync(createUser, registerViewModel.Password);
-
-            if (applicationResult.Succeeded)
-            {
-                // Add the user to the "PrivateUser" role
-                var applicationIdentityResult = await userManager.AddToRoleAsync(createUser, "PrivateUser");
-
-                if (applicationIdentityResult.Succeeded)
-                {
-                    // Redirect to Login if successful
-                    return RedirectToAction("Login");
-                }
+                return View(registerViewModel); // Returner skjemaet med feilmeldinger
             }
 
-            // If any of the operations fail, return the Register view with errors
-            foreach (var error in applicationResult.Errors)
+            try
             {
-                ModelState.AddModelError(string.Empty, error.Description);
+                var createUser = new Users
+                {
+                    FirstName = registerViewModel.FirstName,
+                    LastName = registerViewModel.LastName,
+                    Email = registerViewModel.Email,
+                    UserName = registerViewModel.Username
+                };
+
+                var applicationResult = await userManager.CreateAsync(createUser, registerViewModel.Password);
+
+                if (applicationResult.Succeeded)
+                {
+                    var applicationIdentityResult = await userManager.AddToRoleAsync(createUser, "PrivateUser");
+
+                    if (applicationIdentityResult.Succeeded)
+                    {
+                        return RedirectToAction("Login");
+                    }
+                }
+
+                foreach (var error in applicationResult.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Vis en generell feilmelding til brukeren
+                ModelState.AddModelError(string.Empty, "En uventet feil oppstod. Vennligst prøv igjen.");
             }
 
             return View(registerViewModel);
@@ -244,13 +253,7 @@ namespace Nettside.Controllers
         }
 
 
-        // Displays the profile page for the logged-in user
-        [HttpGet]
-        public async Task<IActionResult> ProfilePage(RegisterViewModel registerViewModel)
-        {
-
-            return View();
-        }
+      
 
 
         [AllowAnonymous]

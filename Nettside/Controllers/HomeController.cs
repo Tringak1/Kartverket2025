@@ -229,11 +229,16 @@ namespace Nettside.Controllers
         public async Task<IActionResult> FinishReport(AreaChangesViewModel areaChangesViewModel)
         {
             var existingAreaChange = await _areaChangeRepository.FindCaseById(areaChangesViewModel.Id);
+            var currentUser = await _userManager.GetUserAsync(User);
 
             if (existingAreaChange != null && existingAreaChange.StatusId != 2)
             {
+                // oppdater status og tilordne saksbehandler
+                existingAreaChange.StatusId = 2; // ferdig behandlet
+                existingAreaChange.CaseWorker = currentUser.FirstName + " " + currentUser.LastName;
 
-                existingAreaChange.StatusId = 2;
+
+
                 //ExistingAreaChange.Date = DateTime.UtcNow; 
 
                 await _areaChangeRepository.UpdateAsync(existingAreaChange);

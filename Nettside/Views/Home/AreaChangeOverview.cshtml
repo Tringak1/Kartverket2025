@@ -1,8 +1,6 @@
 ﻿@using Nettside.Models.ViewModel
 @model IEnumerable<Nettside.Models.ViewModel.AreaChangesViewModel>
 
-
-
 @{
     ViewData["Title"] = "Overview";  // Setter tittelen på siden til "Overview".
 }
@@ -11,68 +9,60 @@
     <link rel="stylesheet" href="~/css/AreaChangeOverview.css" asp-append-version="true" />
 </head>
 
-
 <body class="table-container">
-   
-    <div class="top-section">
-        <h1 class="title">Alle saker</h1>
-        <p class="fullDescription">
-            Her er en oversikt over alle saker.
-        </p>
-    </div>
+    @if (User.IsInRole("Caseworker"))
+    {
+        <div class="top-section">
+            <h1 class="title">Alle saker</h1>
+            <p class="fullDescription">
+                Her er en oversikt over alle saker.
+            </p>
+        </div>
 
+        <div class="table-box">
+            <h2 class="table-title">Alle saker</h2>
 
-    <div class="table-box">
-        <h2 class="table-title">Alle saker</h2>  
-
-
-        
-        <table class="table">
-     
-        <thead>
-       
-        <tr class="table-header">
-        <th>RapportID</th>
-        <th>Endringer</th>
-        <th>Beskrivelse</th>
-        <th>Kommunenavn</th>
-        <th>Fylkenavn</th>
-        <th>Status</th>
-        </tr>
-        </thead>
-        <tbody class="table-body">
- 
-        @foreach (var change in Model)
-        {
-            <tr>
-                <td>@change.Id</td>
-               <td>@change.ViewAreaJson</td>
-                <td>@change.ViewDescription</td>
-                 <td>@change.ViewKommunenavn</td>
-                 <td>@change.ViewFylkenavn</td>
-                 <td>@change.Status</td>
-
-            
-            <td>
-                <a href="@Url.Action("EditAreaChangeView", "Home", new { id = change.Id})" class="btn btn-warning">Edit</a>
-                            <form asp-action="DeleteAreaChange" asp-controller="Home" method="post" style="display:inline;">
-                                <input type="hidden" name="id" value="@change.Id" />
-                                <button type="submit" class="btn btn-danger">Delete</button>
-                                
-                            </form>
-
-                            <form asp-action="FinishReport" asp-controller="Home" method="post" style="display:inline;">
-                                <input type="hidden" name="id" value="@change.Id" />
-                                <button type="submit" class="btn btn-success">Finish</button>
-                                
-                            </form>
-
-
-
-            </td>
-            </tr>
-        }
-        </tbody>
-        </table>
-    </div>
+            <table class="table">
+                <thead>
+                    <tr class="table-header">
+                        <th>RapportID</th>
+                        <th>Endringer</th>
+                        <th>Beskrivelse</th>
+                        <th>Kommunenavn</th>
+                        <th>Fylkenavn</th>
+                        <th>Status</th>
+                        <th>Handlinger</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    @foreach (var change in Model)
+                    {
+                        <tr>
+                            <td>@change.Id</td>
+                            <td>@change.ViewAreaJson</td>
+                            <td>@change.ViewDescription</td>
+                            <td>@change.ViewKommunenavn</td>
+                            <td>@change.ViewFylkenavn</td>
+                            <td>@change.Status</td>
+                            <td>
+                                <a href="@Url.Action("EditAreaChangeView", "Home", new { id = change.Id})" class="btn btn-warning">Edit</a>
+                                <form asp-action="DeleteAreaChange" asp-controller="Home" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@change.Id" />
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                                <form asp-action="FinishReport" asp-controller="Home" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@change.Id" />
+                                    <button type="submit" class="btn btn-success">Finish</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <p>Du har ikke tilgang til denne siden.</p>
+    }
 </body>

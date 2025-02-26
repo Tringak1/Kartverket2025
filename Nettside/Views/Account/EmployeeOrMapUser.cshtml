@@ -11,7 +11,8 @@
     <div class="site-container">
 
         @* Form for role selection *@
-        <form method="get">
+        <form method="post">
+            @Html.AntiForgeryToken() <!-- Protection CSRF -->
             @* Ttitle prompting the user to choose a role *@
             <h1 class="site-title" style="text-align: center"> Er du privatperson eller ansatt?</h1>
            
@@ -22,7 +23,7 @@
                 </button>
 
                 @* Button for employees to navigate to the RegisterCaseWworker action *@
-                <button type="submit" name="userRole" asp-action="RegisterCaseworker" class="role-button">
+                <button type="submit" name="userRole" asp-action="RegisterCaseworker" value="Caseworker" class="role-button">
                     Jeg er ansatt
                 </button>
             </div>
