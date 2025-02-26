@@ -7,11 +7,10 @@
 }
 
 <head>
-    <link rel="stylesheet" href="~/css/AreaChangeOverview.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/AreaChangeOverview.css" asp-append-version="true" /> @* links to the AreaChangeOverview.css file*@
 </head>
 
-
-<body class="table-container">
+<body class="table-container"> @* A table that displays user submit history, each report is represented by a row with a relevant data for each column *@
 
     <div class="top-section">
         <h1 class="title">Alle saker</h1>
@@ -20,17 +19,14 @@
         </p>
     </div>
 
-
-    <div class="table-box">
+    <div class="table-box"> 
         <h2 class="table-title">Mine saker</h2>  
-
-
-
+        
         <table class="table">
 
         <thead>
 
-        <tr class="table-header">
+        <tr class="table-header"> @* Table header that displays all the titles of different data of the area change report*@
         <th>RapportID</th>
         <th>AreaJson</th>
         <th>Beskrivelse</th>
@@ -40,7 +36,7 @@
          <th>Status</th>
         </tr>
         </thead>
-        <tbody class="table-body">
+        <tbody class="table-body"> @* Table body that displays the different data sent in from a user, the area change report itself *@
 
                 @foreach (var change in Model)
                 {
@@ -52,8 +48,6 @@
                      <td>@change.ViewFylkenavn</td>
                      <td>@change.CaseHandler</td>
                       <td>@change.Status</td>
-
-            
                 </tr>
                 }
         </tbody>
