@@ -2,12 +2,12 @@
 
 @inject SignInManager<Users> signInManager;
 
-<ul class="navbar-nav ms-auto">
+<ul class="navbar-nav ms-auto"> 
     @if (signInManager.IsSignedIn(User))
     {
-        <li class="nav-item">
+        <li class="nav-item"> @* Log out action, where the user can log out from their account *@
             <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
-                @Html.AntiForgeryToken() <!-- protects the logout POST request -->
+                @Html.AntiForgeryToken() @* protects the logout POST request *@
                 <button type="submit" class="nav-link btn btn-link text-dark p-0">
                     Logout, @User?.Identity?.Name
                     
@@ -17,7 +17,7 @@
     }
     else
     {
-        <li class="nav-item">
+        <li class="nav-item"> @* Options for logging in or register a new account *@
             <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
         </li>
         <li class="nav-item">
