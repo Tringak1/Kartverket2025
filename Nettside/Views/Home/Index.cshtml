@@ -2,11 +2,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "Home Page";
 }
-
+@* This section links the Index.cshtml file to the home.css and site.css files - style files *@
 <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
 <body>
-<div class="top-section">
+<div class="top-section"> @* A container for introduction shown on the home page *@
     <div class="description">
         <h1 class="title">Her kan du melde inn kartendringer</h1>
         <p class="fullDescription">
@@ -18,13 +19,13 @@
             det!
         </p> 
     </div>
-    <div class="picture">
+    <div class="picture"> @* Displays a picture from Kartverket´s official site in the backgroun on the home page *@
         <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
             <img src="~/images/Kartverket_bilde.jpeg" alt="Home page photo"/>
         </a>
     </div>
 </div>
-<div bottom-section>
+<div bottom-section> @* A button on the website that let the users interact with that leads them to another page, EmployeeOrMapUser *@
         <div class="button-container">
             <form asp-controller="Account" asp-action="EmployeeOrMapUser" method="get">
                 <button type="submit" class="AreaChangeBtn">
