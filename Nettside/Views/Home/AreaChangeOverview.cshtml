@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="~/css/AreaChangeOverview.css" asp-append-version="true" />
 </head>
 
-<body class="table-container">
+<body class="table-container"> 
     @if (User.IsInRole("Caseworker"))
-    {
-        <div class="top-section">
+    { @* Displays a title and a description at the top of the page, introducing the list of all area changes *@
+        <div class="top-section"> 
             <h1 class="title">Alle saker</h1>
             <p class="fullDescription">
                 Her er en oversikt over alle saker.
             </p>
         </div>
 
-        <div class="table-box">
+        <div class="table-box"> 
             <h2 class="table-title">Alle saker</h2>
 
-            <table class="table">
+            <table class="table"> @* A table is rendered displaying the list of area changes. For each area change, the following columns are displayed *@
                 <thead>
                     <tr class="table-header">
                         <th>RapportID</th>
@@ -45,13 +45,14 @@
                             <td>@change.ViewFylkenavn</td>
                             <td>@change.Status</td>
                             <td>
-                                <a href="@Url.Action("EditAreaChangeView", "Home", new { id = change.Id})" class="btn btn-warning">Edit</a>
+                                @* Each area change entry has associated action buttons: edit, delete, and finish *@
+                                <a href="@Url.Action("EditAreaChangeView", "Home", new { id = change.Id })" class="btn btn-warning">Edit</a>
                                 <form asp-action="DeleteAreaChange" asp-controller="Home" method="post" style="display:inline;">
-                                    <input type="hidden" name="id" value="@change.Id" />
+                                    <input type="hidden" name="id" value="@change.Id"/>
                                     <button type="submit" class="btn btn-danger">Delete</button>
                                 </form>
                                 <form asp-action="FinishReport" asp-controller="Home" method="post" style="display:inline;">
-                                    <input type="hidden" name="id" value="@change.Id" />
+                                    <input type="hidden" name="id" value="@change.Id"/>
                                     <button type="submit" class="btn btn-success">Finish</button>
                                 </form>
                             </td>
