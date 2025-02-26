@@ -3,41 +3,41 @@
 @{
     ViewData["Title"] = "Register Change";
 }
-
+@* This sections links the RegisterAreaChange.cshtml file to leaflet.css and leaflet.draw.css style files*@
 <head>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
 </head>
 
-<div style="display: flex; flex-direction: row; height: 100vh; background-color: #d0a15a;">
-    <!-- Map section -->
+<div style="display: flex; flex-direction: row; height: 100vh; background-color: #d0a15a;"> 
+    @* Map section, displays the map *@
     <div id="map" style="flex: 2; height: 100%;"></div>
 
-    <!-- Form section -->
+    @* Form section, displays a form section where the users can input information of the area change they want to send in *@
     <div style="flex: 1; background-color: #d0a15a; padding: 20px; display: flex; flex-direction: column; gap: 20px; height: 100%;">
         <h2 style="color: white;">Legg til en endring i kartet</h2>
         <form asp-action="RegisterAreaChange" method="post" style="display: flex; flex-direction: column; gap: 15px;">        
 
-            <!-- GeoJSON Data (hidden) -->
-            <input type="hidden" id="geoJsonInput" asp-for="ViewAreaJson" />
+            @* GeoJSON Data (hidden) *@
+           @* <input type="hidden" id="geoJsonInput" asp-for="ViewAreaJson" /> *@
 
-            <!-- Latitude -->
+            @* Latitude *@
             <label for="latitude" style="color: white;">Breddegrad</label>
             <input type="text" id="latitude" name="Latitude" class="form-control" readonly />
 
-            <!-- Longitude -->
+            @* Longitude *@
             <label for="longitude" style="color: white;">Lengdegrad</label>
             <input type="text" id="longitude" name="Longitude" class="form-control" readonly />
 
-            <!-- Description -->
+            @* Description *@
             <label for="description" style="color: white;">Beskrivelse</label>
             <textarea id="description" asp-for="ViewDescription" class="form-control" placeholder="Skriv her..." required></textarea>
 
-            <!-- Kommunenavn -->
+            @* Kommunenavn *@
             <label style="color: white;">Kommunenavn</label>
             <input type="text" asp-for="ViewKommunenavn" id="municipalityInput" class="form-control" readonly />
 
-            <!-- Fylke -->
+            @* Fylke *@
             <label style="color: white;">Fylke</label>
             <input type="text" id="countryInput" asp-for="ViewFylkenavn" class="form-control" readonly />
 
@@ -49,19 +49,20 @@
 </div>
 
 @section Scripts {
-    <!-- These four lines are important to keep -->
-    <!-- 1. Leaflet CSS -->
+    @* These four lines are important to keep, consists of important Javascript libraries *@
+    @* 1. Leaflet CSS *@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-    <!-- 2. Leaflet Draw CSS -->
+    @* 2. Leaflet Draw CSS *@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
 
-    <!-- 3. Leaflet JS -->
+    @* 3. Leaflet JS *@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-    <!-- 4. Leaflet Draw JS -->
+    @* 4. Leaflet Draw JS *@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
-    <!-- 5. Turf JS -->
+    
+    @* 5. Turf JS *@
     <script src="https://cdn.jsdelivr.net/npm/@@turf/turf@6.5.0/turf.min.js"></script>
 
     <script>
